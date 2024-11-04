@@ -1,0 +1,2710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potolo-Business</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/business-header.css">
+    <link rel="stylesheet" href="./assets/css/business-body.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="./assets/business-section-images/logo-img.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../eco-action pg/aset/css/corporate.css">
+    <link rel="stylesheet" href="./aset/css/legal.css">
+
+    <!-- <link rel="stylesheet" href="./aset/css/eco-action.css"> -->
+    <link rel="stylesheet" href="./aset/css/indec.css">
+    <link rel="stylesheet" href="./aset/css/news-room.css">
+
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .whole-bg {
+            background-image: url('./assets/business-section-images/whole-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .comit-img-left {
+            /* max-width: 482px !important;
+            width: 100%;
+            height: auto; */
+            border-left: 7.88px solid #00ADD4;
+            border-radius: 7.62px;
+            box-shadow: 0px 5.51px 11.82px 0px #42A8C324;
+
+        }
+
+        .fifty-percent-h {
+            font-family: "Open Sans";
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 40.85px;
+            color: #118099;
+        }
+
+        .fifty-percent-p {
+            color: #999A9D;
+            font-family: "Open Sans";
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 16.34px;
+        }
+
+        .commitment-bg-container {
+            background-image: url('./assets/business-section-images/commitment-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
+        }
+
+        .great-fam {
+            font-family: "Open Sans";
+            font-size: 27px;
+            font-weight: 600;
+            line-height: 40.85px;
+            text-align: center;
+            color: #2B2B2B;
+
+        }
+
+        .corporate-values-card {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            /* width: 100%; */
+            width: 209px;
+            border-radius: 13.85px;
+            position: absolute;
+            top: 12px;
+            /* right: 20px; */
+            left: 12px;
+        }
+
+        .corp-card-bg {
+            position: relative;
+            width: 155px;
+            height: 138px;
+            border-radius: 13.85px;
+            background: #118099;
+
+        }
+
+
+        .global-presence {
+            background-image: url('./assets/corporate-information-images/golobal.png');
+            background-size: cover;
+            /* Ensures the background image covers the div */
+            background-position: center;
+            /* Centers the background image */
+            height: 100vh;
+            /* Makes the div full height of the viewport */
+            position: relative;
+            color: white;
+            /* Sets text color to white */
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .ten-para p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+
+
+        .whole-bg {
+            background-image: url('./assets/business-section-images/whole-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .whole-bg2 {
+            background: linear-gradient(to right, #00ADD40D 58.7%, transparent 50%) !important;
+        }
+
+        .whole-bg4 {
+            background: linear-gradient(to right, #00ADD40D 58.7%, transparent 50%) !important;
+            border-bottom-left-radius: 50px;
+            /* Adjust the radius as needed */
+            border-bottom-right-radius: 50px;
+            overflow: hidden;
+        }
+
+
+        .comit-top {
+            margin-top: 69px !important;
+        }
+
+        @media (max-width: 992px) {
+            .comit-top {
+                margin-top: 0px !important;
+            }
+        }
+
+
+        .vis-bg {
+            background-image: url('./assets/business-section-images/our-v-bg.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .coo-bg {
+            background-image: url('./assets/business-section-images/cmt-bg\ \(1\).png'), url('./assets/business-section-images/cmt-bg\ \(2\).png');
+            background-position: 0px 209px, right 0px top 0px;
+            background-repeat: no-repeat;
+            background-size: 136px 327px, 308px 546px;
+        }
+
+
+
+        .apps-and-products-bg {
+            background-image: url('./assets/business-section-images/cmt-bg\ \(1\).png');
+            background-position: 0px 139px;
+            background-repeat: no-repeat;
+            background-size: 157px 342px;
+        }
+
+
+        .low-barrier-bg {
+            background-image: url('./assets/business-section-images/low-barrier-bg.png');
+            background-position: 0px 123px;
+            background-repeat: no-repeat;
+            background-size: 260px 339px;
+        }
+
+
+        .global-expand-h {
+            font-family: "Open Sans";
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 40.85px;
+
+        }
+
+        .global-expand-p {
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24.51px;
+            text-align: center;
+            color: #FFFFFF;
+            padding-inline: 284px;
+
+        }
+
+        @media (max-width: 992px) {
+            .global-expand-p {
+
+                padding-inline: 0px;
+
+            }
+        }
+
+        .comit-top4 {
+
+            background-image: url('./assets/business-section-images/cmt-bg\ \(1\).png'), url('./assets/business-section-images/cmt-bg\ \(2\).png');
+            background-position: 0px 98px, right 0px top 229px;
+            background-repeat: no-repeat;
+            background-size: 136px 327px, 308px 546px;
+            padding: 0px;
+        }
+
+        @media (max-width :500px) {
+            .pd-cust-t {
+                padding-right: 82px !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ********* Header-section start *********** -->
+    <div class="stiky-top">
+        <div class="container">
+            <div class="d-flex gap-5 py-2">
+                <a class="stiky-top-item" href="#">
+                    9470 Riverview, Zion 60099
+                </a>
+                <a class="stiky-top-item" href="#">
+                    info@Potolo.com
+                </a>
+                <a class="stiky-top-item" href="#">
+                    +88 564 867 4687
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="whole-bg1">
+        <nav class=" navbar navbar-expand-lg bg-body-tertiary"
+            style="padding-bottom: 32px; background: transparent !important;">
+            <div class="container">
+                <!-- Logo on the left -->
+                <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
+                <a class="navbar-brand" href="#">
+                    <div class="d-flex align-items-center gap-2">
+                        <img class="img-fluid logo-img" src="./assets/business-section-images/logo-img.png">
+                        <p class="logo-name mb-0">Potolo</p>
+                    </div>
+                </a>
+
+
+                <!-- Navbar toggler for smaller screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Center the navbar items -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; gap: 23px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle list-colorr d-flex align-items-center" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                                <div class="ms-1">
+                                    <svg width="10" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="ms-1 dropdown-icon">
+                                        <path
+                                            d="M5.25994 6C5.0713 6 4.88268 5.92797 4.73885 5.78422L0.212998 1.25832C-0.0749056 0.970413 -0.0749056 0.503627 0.212998 0.21584C0.500785 -0.0719468 0.967478 -0.0719468 1.2554 0.21584L5.25994 4.22061L9.2645 0.21598C9.5524 -0.0718069 10.019 -0.0718069 10.3068 0.21598C10.5949 0.503767 10.5949 0.970553 10.3068 1.25846L5.78103 5.78436C5.63713 5.92814 5.44851 6 5.25994 6Z"
+                                            fill="#999A9D" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle list-colorr d-flex align-items-center" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                business
+                                <div class="ms-1">
+                                    <svg width="10" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="ms-1 dropdown-icon">
+                                        <path
+                                            d="M5.25994 6C5.0713 6 4.88268 5.92797 4.73885 5.78422L0.212998 1.25832C-0.0749056 0.970413 -0.0749056 0.503627 0.212998 0.21584C0.500785 -0.0719468 0.967478 -0.0719468 1.2554 0.21584L5.25994 4.22061L9.2645 0.21598C9.5524 -0.0718069 10.019 -0.0718069 10.3068 0.21598C10.5949 0.503767 10.5949 0.970553 10.3068 1.25846L5.78103 5.78436C5.63713 5.92814 5.44851 6 5.25994 6Z"
+                                            fill="#999A9D" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle list-colorr d-flex align-items-center" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Apply
+                                <div class="ms-1">
+                                    <svg width="10" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="ms-1 dropdown-icon">
+                                        <path
+                                            d="M5.25994 6C5.0713 6 4.88268 5.92797 4.73885 5.78422L0.212998 1.25832C-0.0749056 0.970413 -0.0749056 0.503627 0.212998 0.21584C0.500785 -0.0719468 0.967478 -0.0719468 1.2554 0.21584L5.25994 4.22061L9.2645 0.21598C9.5524 -0.0718069 10.019 -0.0718069 10.3068 0.21598C10.5949 0.503767 10.5949 0.970553 10.3068 1.25846L5.78103 5.78436C5.63713 5.92814 5.44851 6 5.25994 6Z"
+                                            fill="#999A9D" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Search bar as a list item (only on mobile) -->
+                        <li class="nav-item d-lg-none">
+                            <form class="d-flex mt-2" role="search">
+
+                                <a class="navbar-brand" href="#">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <p class="nav-login mb-0">Log in</p>
+                                        <button class="nav-sign-up-btn px-3" type="submit">Sign up</button>
+                                    </div>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search form on the right (only on larger screens) -->
+                <form class="d-none d-lg-flex ms-auto" role="search">
+                    <a class="navbar-brand" href="#">
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="nav-login mb-0">Log in</p>
+                            <button class="nav-sign-up-btn" type="submit">Sign up</button>
+                        </div>
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- ********* Header-section end *********** -->
+    <!-- ********* Body start *********** -->
+    <!-- ********* Menus start *********** -->
+    <div class="">
+        <div class="">
+            <!-- Nav Tabs -->
+
+            <div class="whole-bg2">
+                <div class="container">
+                    <div class="tab-scroll-container">
+                        <button class="scroll-button scroll-left" aria-label="Scroll left">&lt;</button>
+                        <div class="tab-wrapper">
+                            <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link-blue active" id="tab1-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1"
+                                        aria-selected="true">About US</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link-blue" id="tab2-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2"
+                                        aria-selected="false">Corporate Information</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link-blue" id="tab3-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3"
+                                        aria-selected="false">News Room</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link-blue" id="tab4-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4"
+                                        aria-selected="false">Investors Relationship</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link-blue" id="tab5-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5"
+                                        aria-selected="false">Eco Actions</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link-blue" id="tab6-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab6" type="button" role="tab" aria-controls="tab6"
+                                        aria-selected="false">Legal</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="scroll-button scroll-right" aria-label="Scroll right">&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Tab Content -->
+            <div class="tab-content mt-0" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+
+                    <!-- Content 01 About-Potolo -->
+                    <!-- *********  Hero section *********** -->
+                    <div class="whole-bg4">
+                        <div class="container">
+                            <div class="row " style="padding-top: 37px;">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <p class="mb-0 about-potolo-h mb-4">About <span
+                                            class="about-potolo-h1">Potolo</span></p>
+                                    <p class="mb-0 about-potolo-detail">
+                                        POTOLO is a pioneering platform dedicated to empowering local businesses and
+                                        fostering vibrant communities through innovative, eco-friendly delivery
+                                        services. Our mission is to create a seamless ecosystem that connects
+                                        entrepreneurs, local service providers, and consumers,
+                                        ensuring mutual growth and sustainability.At POTOLO, we believe in the
+                                        transformative power of local
+                                        businesses to shape strong, resilient communities. We are committed to
+                                        supporting these enterprises by
+                                        providing them with the tools and resources necessary to thrive in a competitive
+                                        digital marketplace.
+                                    </p>
+                                    <div class="" style="margin-top: 43px;">
+                                        <a href="./nextpage.html"> <button
+                                                class="btn lrn-btn1 d-flex justify-content-center align-items-center">Learn
+                                                More
+                                                <img class="ms-3" src="./assets/business-section-images/white-aro.png"
+                                                    style="width: 20.09px;height: 8px;">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid" style="width: 100%;"
+                                        src="./assets/business-section-images/about-img.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *********  Hero section *********** -->
+                    <!-- ********* Our Vision start *********** -->
+                    <div class="vis-bg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 mt-5">
+
+                                    <div class="container">
+                                        <div class="vision-image-container">
+                                            <img src="./assets/business-section-images/visionn.png" alt="First Image"
+                                                class="image1-vision img-fluid">
+                                            <img src="./assets/business-section-images/vision-img (1).png"
+                                                alt="Second Image" class="image2-vision img-fluid">
+                                            <img src="./assets/business-section-images/vision-img (3).png"
+                                                alt="Third Image" class="image3-vision img-fluid">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-5 mt-5 pt-lg-5">
+                                    <div class="py-lg-5 py-2 my-4 my-lg-5 resp992">
+                                        <p class="vision-h">Our <span class="vision-h1">Vision</span></p>
+                                        <p class="vision-p" style="width: 89%;">
+
+                                            At POTOLO, we envision a world where local businesses thrive at the heart of
+                                            strong
+                                            communities. By empowering small enterprises to reach wider audiences, we
+                                            foster
+                                            local economic growth and sustainability, ensuring businesses and
+                                            communities
+                                            flourish together. <br>
+                                            We aim to enhance local economies in a sustainable environment, where
+                                            businesses
+                                            and
+                                            the neighborhood create mutual prosperity.
+                                        </p>
+                                        <div class="" style="margin-top: 29px;">
+                                            <button class="lrn-btn me-2">Learn More
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ********* Our Vision end *********** -->
+                    <!-- ********* Our Commitment start *********** -->
+                    <!-- <div class="commitment-bg-container comit-top"> -->
+                    <div class="comit-top comit-top4">
+                        <div class="container">
+                            <div class="row pt-lg-5 mb-5">
+                                <div class="col-lg-5 mt-lg-5">
+                                    <div class="py-lg-3 my-lg-5">
+                                        <p class="vision-h">Our <span class="vision-h1">Commitment</span></p>
+                                        <p class="vision-p" style="font-size: 13.7px;width: 90%;">
+                                            Our mission is to provide users with ease of accessibility and quick
+                                            fulfilment for most consumer needs, making life simple while helping
+                                            city-run businesses. We strive to provide streamlined, effective
+                                            services, and are dedicated to providing the best consumer experience in
+                                            a way that supports environmental restoration efforts, local economies.
+                                            With focus on innovation and product quality, our goal is to create a
+                                            vehicle that addresses market needs and challenges the status quo while
+                                            engaging communities through economic growth for better environmental
+                                            solutions.
+                                        </p>
+                                        <div class="mt-4">
+                                            <button class="lrn-btn me-3">Learn More
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-lg-5" style="display: flex;justify-content: flex-end;">
+                                    <div class="color-box position-relative">
+
+                                        <!-- <img src="./assets/business-section-images/commitmnt-img.png" alt="Image 1"
+                                        class="img-fluid comit-img"> -->
+                                        <img src="./assets/business-section-images/cmt-ph.png" alt="Image 1"
+                                            class="img-fluid">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ********* Our Commitment end *********** -->
+                    <!-- ********* Meet Our Team start *********** -->
+                    <div class="crd-bg-lines"
+                        style=" background-image: url('./assets/business-section-images/Group\ 18200\ \(6\).png'); background-position: 0px 287px; background-repeat: no-repeat; background-size: 221px 332px;padding-bottom: 57px;">
+                        <div class="meet-team-bg pt-5 pb-5">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div>
+                                    <p class="vision-h text-center">Meet Our <span class="vision-h1">Team</span></p>
+                                </div>
+                                <div class="px-lg-5 mx-lg-5">
+                                    <p class="vision-p text-center px-lg-5 mx-lg-5 mb-5" style="font-size: 16px;">
+                                        Our dedicated team at Potolo is passionate about empowering local businesses and
+                                        fostering community connections. We work together to make local services easily
+                                        accessible, delivering growth, convenience, and quality for all.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- cards -->
+
+                            <div class="meet-team-bg">
+                                <div class="container">
+                                    <div class="carousel-container">
+                                        <button class="carousel-button prev">&lt;</button>
+                                        <button class="carousel-button next">&gt;</button>
+                                        <div class="carousel-track">
+                                            <div class="carousel-card">
+                                                <div class="card-meet">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="./assets/business-section-images/meet-cards.png"
+                                                            style="margin-top: -46px;" class="card-img-top meet-img1"
+                                                            alt="Alice Johnson">
+                                                    </div>
+
+                                                    <div class="card-body px-2 mb-3">
+                                                        <p class="card-meet-title text-center mb-1 mt-3">Alice Johnson
+                                                        </p>
+                                                        <p class="card-meet-p mb-0">CEO & Founder</p>
+                                                        <p class="card-meet-text mb-0 mt-2">
+                                                            Driven by a passion for community, Alice leads Potolo
+                                                            with vision and commitment.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (3).png"
+                                                                    style="width: 19px; height: 16px;"
+                                                                    alt="Social Icon 1">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (1).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 2">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (2).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 3">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-card">
+                                                <div class="card-meet">
+                                                    <!-- Card content (same as above) -->
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="./assets/business-section-images/meet-cards (1).png"
+                                                            style="margin-top: -46px;" class="meet-img1"
+                                                            alt="Alice Johnson">
+                                                    </div>
+
+                                                    <div class="card-body px-2 mb-3">
+                                                        <p class="card-meet-title text-center mb-1 mt-3">Alice Johnson
+                                                        </p>
+                                                        <p class="card-meet-p mb-0">CEO & Founder</p>
+                                                        <p class="card-meet-text mb-0 mt-2">
+                                                            Driven by a passion for community, Alice leads Potolo
+                                                            with vision and commitment.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (3).png"
+                                                                    style="width: 19px; height: 16px;"
+                                                                    alt="Social Icon 1">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (1).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 2">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (2).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 3">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-card">
+                                                <div class="card-meet">
+                                                    <!-- Card content (same as above) -->
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="./assets/business-section-images/meet-cards (2).png"
+                                                            style="margin-top: -46px;" class="card-img-top meet-img1"
+                                                            alt="Alice Johnson">
+                                                    </div>
+
+                                                    <div class="card-body px-2 mb-3">
+                                                        <p class="card-meet-title text-center mb-1 mt-3">Alice Johnson
+                                                        </p>
+                                                        <p class="card-meet-p mb-0">CEO & Founder</p>
+                                                        <p class="card-meet-text mb-0 mt-2">
+                                                            Driven by a passion for community, Alice leads Potolo
+                                                            with vision and commitment.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (3).png"
+                                                                    style="width: 19px; height: 16px;"
+                                                                    alt="Social Icon 1">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (1).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 2">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (2).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 3">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-card">
+                                                <div class="card-meet">
+                                                    <!-- Card content (same as above) -->
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="./assets/business-section-images/meet-cards.png"
+                                                            style="margin-top: -46px;" class="card-img-top meet-img1"
+                                                            alt="Alice Johnson">
+                                                    </div>
+
+                                                    <div class="card-body px-2 mb-3">
+                                                        <p class="card-meet-title text-center mb-1 mt-3">Alice Johnson
+                                                        </p>
+                                                        <p class="card-meet-p mb-0">CEO & Founder</p>
+                                                        <p class="card-meet-text mb-0 mt-2">
+                                                            Driven by a passion for community, Alice leads Potolo
+                                                            with vision and commitment.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (3).png"
+                                                                    style="width: 19px; height: 16px;"
+                                                                    alt="Social Icon 1">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (1).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 2">
+                                                            </a>
+                                                            <a href="#" class="" style="text-decoration: none;">
+                                                                <img src="./assets/business-section-images/social-icons (2).png"
+                                                                    style="width: 17px; height: 17px;"
+                                                                    alt="Social Icon 3">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- cards -->
+
+
+                        </div>
+                    </div>
+                    <!-- ********* Meet Our Team end *********** -->
+
+
+
+                </div>
+
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <!-- Content 02 -->
+
+                    <!-- *********  Hero section2 *********** -->
+                    <div class="whole-bg2">
+                        <div class="container">
+                            <div class="row pt-5">
+                                <!-- <div class="col-lg-5 d-flex flex-column justify-content-center"> -->
+                                <div class="col-lg-5 d-flex flex-column">
+                                    <p class="mb-0 empower-h mb-4 mt-lg-5 pt-lg-3">Empowering <span class="empower-h1">
+                                            Local
+                                            Businesses</span> with
+                                        Sustainable <span class="empower-h1">Solutions</span></p>
+                                    <p class="mb-0 about-potolo-detail">
+                                        to improve their operations and audience.
+                                        Through these advanced delivery solutions, we make retail
+                                        logistics cleaner and easier so that businesses can prosper without giving up on
+                                        their green ethos. Local entrepreneurs promote their business on our platform,
+                                        helping them to grow and get more customers from your community while doing
+                                        great things for the planet. We form a community that acts
+                                        together, driving growth in one of the most sustainable ways.
+                                    </p>
+                                    <div class=" d-flex justify-content-start align-items-center gap-4 w-100">
+                                        <div class="" style="margin-top: 43px;">
+                                            <button
+                                                class="btn lrn-btn1 d-flex justify-content-center align-items-center">Learn
+                                                More
+                                                <img class="ms-3" src="./assets/business-section-images/white-aro.png"
+                                                    style="width: 20.09px;height: 8px;">
+                                            </button>
+                                        </div>
+                                        <div class="" style="margin-top: 43px;">
+                                            <button class="lrn-btn me-2">About us
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid" style="width: 100%;"
+                                        src="./assets/corporate-information-images/sec-1-image.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *********  Hero section2 *********** -->
+                    <div class="vis-bg">
+                        <div class="container">
+                            <p class="great-fam  mt-5">Greater family of Delivery men/women and Administrator
+                            </p>
+
+                            <p class="text-center great-fam-p">
+                                The delivery crew is the heart of POTOLO, a loyal team from various backgrounds
+                                that shares our community and service values. Every single voucher deliverer isn't
+                                one of our crew but an important cog in the POTOLO family that helps businesses
+                                locally with reaching their customers promptly and reliably. At the same time our
+                                administrators, truly are irreplaceable helping provide support and resources to
+                                better help those of us delivering. This allows us to work diligently in order
+                                that we might cultivate a spirit of collaboration rather than competition, as
+                                well foster mutual respect, and stand for the betterment of local delivery.
+
+                            </p>
+                        </div>
+
+
+                        <div class="container mb-5 ">
+                            <div class="row ">
+                                <div class="col-12 d-md-flex align-items-md-center">
+                                    <div class="col mt-5 sect-4 ">
+
+                                        <div class="container sect-4-img">
+
+                                            <img src="./assets/business-section-images/3rd-main-image.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+
+                                    </div>
+                                    <div class="col mt-5">
+                                        <div class="py-md-5 my-md-5  ms-md-5">
+
+                                            <p class="mb-0 ceo-h mb-4">CEO <span class="ceo-h1">: Alice
+                                                    Johnson</span></p>
+
+                                            <p class="ceo-p" style="width: 83%;">
+                                                Background in tech or local business empowerment, with a strong
+                                                commitment to sustainability and community development.
+                                            </p>
+
+                                            <div class="mt-4">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mb-5 ">
+                        <div class="row ">
+                            <div class="col-12 d-md-flex align-items-md-center">
+
+                                <div class="col mt-5">
+                                    <div class="py-md-5 my-md-5  ms-md-5">
+
+                                        <p class="mb-0 ceo-h mb-4">CFO :<span class="ceo-h1"> Mark Smith</span></p>
+
+                                        <p class="ceo-p" style="font-size: 14.5px; width: 83%;">
+                                            Expertise in financial strategy and managing operations across global
+                                            markets, focusing on expansion in Africa. </p>
+
+                                        <div class="mt-4">
+                                            <button class="lrn-btn me-2">Learn More
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col mt-5 sect-4 ">
+
+                                    <div class="container sect-4-img">
+
+                                        <img src="./assets/business-section-images/4th-main-image.png" alt=""
+                                            class="img-fluid">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coo-bg">
+                        <div class="container mb-lg-5 pb-lg-5">
+                            <div class="row ">
+                                <div class="col-12 d-md-flex align-items-md-center">
+                                    <div class="col mt-lg-5 sect-4 ">
+
+                                        <div class="container sect-4-img">
+
+                                            <!-- <img src="./assets/business-section-images/5th-main-img.png" alt=""
+                                                class="img-fluid"> -->
+                                            <img src="./assets/business-section-images/5th-img-main.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+
+                                    </div>
+                                    <div class="col mt-lg-5">
+                                        <div class="py-lg-5 my-5  ms-md-5">
+
+                                            <p class="mb-0 ceo-h mb-4">COO <span class="ceo-h1">: Emily Davis</span></p>
+
+                                            <p class="ceo-p" style="width: 83%;">
+                                                Overseeing delivery logistics, ensuring eco-friendly practices, and
+                                                optimizing on-demand services. </p>
+
+                                            <div class="mt-4">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="crd-bg-lines"
+                        style=" background-image: url('./assets/business-section-images/Group\ 18200\ \(6\).png'); background-position: 0px 2px; background-repeat: no-repeat; background-size: 221px 332px;padding-bottom: 57px;">
+
+                        <div class="meet-team-bg mt-lg-5 pt-lg-5 " style="padding-bottom: 91px;">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div>
+
+                                    <p class="crporate-values-h text-center mb-lg-5 mb-2 pb-lg-4">Corporate Values <span
+                                            class="vision-h1"></span></p>
+                                </div>
+
+                            </div>
+
+                            <div>
+
+
+
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- First Card -->
+
+                                        <div class="col-12 col-md-6 col-lg-3 mb-4 responsive-corporate-cntr pd-cust-t">
+                                            <div class="corp-card-bg">
+                                                <div class="corporate-values-card">
+                                                    <div class="card-body-sustain px-2 py-2">
+                                                        <div
+                                                            class="d-flex gap-3 px-3 justify-content-center align-items-center">
+                                                            <div class="corp-img">
+                                                                <img src="./assets/corporate-information-images/1-card.png"
+                                                                    style="width: 34px; height: 28px;" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <div>
+
+                                                                <p class="mb-0 corporate-card-h">Community Empowerment
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="px-3 corporate-card-p pt-3 pb-2">We actively support
+                                                            local businesses, providing a
+                                                            platform that helps them thrive in the competitive digital
+                                                            marketplace.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="col-12 col-md-6 col-lg-3 mb-4 responsive-corporate-card1 responsive-corporate-cntr pd-cust-t">
+                                            <div class="corp-card-bg">
+                                                <div class="corporate-values-card">
+                                                    <div class="card-body-sustain px-2 py-2">
+                                                        <div
+                                                            class="d-flex gap-3 px-3 justify-content-center align-items-center">
+                                                            <div class="corp-img">
+                                                                <img src="./assets/business-section-images/corporate-cards-icons (2).png"
+                                                                    style="width: 45px;height: 27px;" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <div>
+
+                                                                <p class="mb-0 corporate-card-h">Community Empowerment
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="px-3 corporate-card-p pt-3 pb-2">We actively support
+                                                            local businesses, providing a
+                                                            platform that helps them thrive in the competitive digital
+                                                            marketplace.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="col-12 col-md-6 col-lg-3 mb-4 pd-cust-t responsive-corporate-card responsive-corporate-cntr">
+                                            <div class="corp-card-bg">
+                                                <div class="corporate-values-card">
+                                                    <div class="card-body-sustain px-2 pt-3 pb-2">
+                                                        <div
+                                                            class="d-flex gap-3 px-3 justify-content-center align-items-center">
+                                                            <div class="corp-img">
+                                                                <img src="./assets/business-section-images/corporate-cards-icons (3).png"
+                                                                    style="width: 30px;height: 30px;" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <div>
+
+                                                                <p class="mb-0 corporate-card-h">Innovation</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="px-3 corporate-card-p pt-3 pb-2">By embracing
+                                                            cutting-edge technology, PotoloLite ensures seamless and
+                                                            efficient service delivery, tailored to customer needs.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="col-12 col-md-6 col-lg-3 mb-4 pd-cust-t responsive-corporate-card responsive-corporate-cntr">
+                                            <div class="corp-card-bg">
+                                                <div class="corporate-values-card">
+                                                    <div class="card-body-sustain px-2 pt-3 pb-2">
+                                                        <div
+                                                            class="d-flex gap-3 px-3 justify-content-center align-items-center">
+                                                            <div class="corp-img">
+                                                                <img src="./assets/business-section-images/corporate-cards-icons (1).png"
+                                                                    style="width: 40px;height: 30px;" alt=""
+                                                                    class="img-fluid">
+                                                            </div>
+                                                            <div>
+
+                                                                <p class="mb-0 corporate-card-h">Social
+                                                                    Responsibility</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="px-3 corporate-card-p pt-3 pb-2">
+                                                            We strive to create a positive impact by uplifting
+                                                            communities and contributing to sustainable development.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="apps-and-products-bg">
+                        <div class="container">
+                            <div class="row pt-lg-5 mb-5">
+                                <div class="col-lg-6 mt-lg-5">
+                                    <div class="py-lg-3 my-lg-5">
+                                        <p class="vision-h">Our Apps and Products</p>
+                                        <p class="vision-p" style="font-size: 13.7px;width: 90%;">
+                                            The POTOLO application facilitates the ordering of products and services
+                                            from a diverse network of partners, offering Users a wide array of choices.
+                                            Users can browse through offerings of various partners, place orders for
+                                            immediate delivery or schedule orders in advance, and make payments directly
+                                            through the application. We request our User’s verify the order details,
+                                            including items, quantities, delivery addresses, and time, before
+                                            submission. POTOLO endeavors to ensure the accuracy and reliability of data
+                                            provided by users. Where applicable we offer independent apps that operate
+                                            within our eco system to facilitate a smooth operation for our vendors and
+                                            other partners.
+
+                                        </p>
+                                        <div class="mt-4 mb-3">
+                                            <button class="lrn-btn me-2">Learn More
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-1"></div> -->
+                                <div class="col-lg-6 mt-lg-5">
+                                    <div class="color-box position-relative">
+
+                                        <img src="./assets/business-section-images/7th-image.png" alt="Image 1"
+                                            class="img-fluid">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- **********************our partners*********************** -->
+
+                    <div class="container">
+                        <div class="row pt-lg-5 mb-5">
+                            <div class="col-lg-6 mt-lg-5">
+                                <div class="color-box position-relative">
+
+                                    <!-- <img src="./assets/business-section-images/8th-image.png" alt="Image 1"
+                                    class="img-fluid"> -->
+                                    <img src="./assets/business-section-images/partnr-ig.png" alt="Image 1"
+                                        class="img-fluid">
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-5 mt-lg-5">
+                                <div class="py-lg-3 my-lg-0 ps-lg-5">
+                                    <p class="vision-h">Our Partners</p>
+                                    <p class="mb-0 ceo-p" style="width: 100%;">
+                                        We believe that collaboration is the key to success.
+                                        Our partners are different local businesses, service providers and
+                                        community organizations that are interested in sustainability and growth
+                                        of the local area. By working together, we create a network that encourages
+                                        the development of local entrepreneurship and innovations and enhances the
+                                        consumer experience. Our partners help us fulfill our mission, and we are happy
+                                        to have them by our side as we build a future for the local community.
+                                    </p>
+                                    <div class="mt-5">
+                                        <button class="lrn-btn me-2">Discover Opportunities
+                                            <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- low bariers -->
+                    <div class="low-barrier-bg">
+                        <div class="container">
+                            <div class="row pt-lg-5 mb-5">
+                                <div class="col-lg-6 mt-lg-5">
+                                    <div class="py-lg-3 my-lg-5">
+                                        <p class="vision-h">Low barrier to entry</p>
+                                        <p class="vision-p" style="font-size: 13.7px;width: 90%;">
+                                            Becoming a part of POTOLO is simple and inclusive, which makes it easier for
+                                            small local businesses to be able to join our platform. We are big on ease
+                                            of use with uncomplicated registration and minimal prerequisites to ensure
+                                            businesses experience our services rapidly. Our service provider partners
+                                            range from small family-run shops up to larger service providers, and our
+                                            easy onboarding process enables you to connect with your consumers like
+                                            never before. POTOLO supports you on your journey to compete in more places,
+                                            for everyone who wants the chance.
+
+                                        </p>
+                                        <div class="mt-4 ">
+                                            <a href="">
+                                                <button class="lrn-btn me-2">Terms and Condition
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+
+                                        </div>
+                                        <div class="mt-1 ">
+
+                                            <a href="">
+                                                <button class="lrn-btn me-2">Privacy Policy
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-1"></div> -->
+                                <div class="col-lg-6 mt-lg-5">
+                                    <div class="color-box position-relative">
+
+                                        <img src="./assets/business-section-images/9th-image.png" alt="Image 1"
+                                            class="img-fluid">
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- *********  global *********** -->
+
+                    <div class="">
+                        <div class="container-fluid">
+                            <div class="row pt-lg-5">
+                                <div class="col-lg-12 d-flex flex-column justify-content-center px-0">
+                                    <p class="global-h  mb-5 text-center">Global Presence
+                                    </p>
+                                    <div class="global-presence d-flex justify-content-center align-items-center">
+                                        <div class="content text-center">
+
+                                            <p class="mb-0 global-expand-h text-white">Expanding Across Border</p>
+                                            <div class="mt-5">
+                                                <p class=" global-expand-p text-white">PotoloLite started its journey
+                                                    with a focus on Africa, empowering
+                                                    local businesses and individuals. Today, we are expanding our reach
+                                                    globally, connecting customers and vendors across multiple regions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                    <!-- content 03 -->
+
+                    <!--<#####> /* BEGIN : Muhammad Munsif ID_366 */ <#####>-->
+
+                    <!-- *********  Hero section *********** -->
+                    <div class="whole-bg4">
+                        <div class="container">
+                            <div class="row " style="padding-top: 79px;">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <p class="mb-0 about-potolo-h mb-4" style="
+                                    font-size: 36px;
+                                    font-weight: 400;
+                                    line-height: 54.47px;">
+                                        Your Source for the <span class="about-potolo-h1" style="font-family: Open Sans;
+                                            font-size: 36px;
+                                            font-weight: 600;
+                                            line-height: 54.47px;">Latest Updates </span> and <span
+                                            class="about-potolo-h1" style="font-family: Open Sans;
+                                            font-size: 36px;
+                                            font-weight: 600;
+                                            line-height: 54.47px;">Insights </span>
+                                    </p>
+                                    <p class="mb-0 about-potolo-detail">
+                                        Encouraging Local Farmers and Their Fresh Produce. POTOLO is
+                                        dedicated to supporting local farmers and encouraging their
+                                        fresh produce on a daily basis. We are committed to
+                                        sustainability and source foods directly from local farms for
+                                        the freshest and high-quality produce for the population. By
+                                        partnering farmers with our community, we cultivate vibrant
+                                        markets and strong local economies. Initiatives this year
+                                        showcased organic fruits, vegetables, dairy products, free-range
+                                        meats, and more.
+                                    </p>
+                                    <div class="" style="margin-top: 43px;">
+                                        <button
+                                            class="btn lrn-btn1 d-flex justify-content-center align-items-center">Learn
+                                            More
+                                            <img class="ms-3" src="./assets/business-section-images/white-aro.png"
+                                                style="width: 20.09px;height: 8px;">
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid" style="width: 100%;"
+                                        src="./assets/news-room-images/imageone.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *********  Hero section *********** -->
+                    <section class="recent-news py-5">
+                        <div class="container">
+                            <div
+                                class="d-flex justify-content-center align-items-center mb-5 position-relative custom-responsive">
+                                <p class="mb-0 recnt-news-h">Recent News</p>
+                                <a href="#" class="see-all-link position-absolute end-0">See All →</a>
+                            </div>
+                        </div>
+
+
+                        <!-- Banner Section -->
+                        <div class="container">
+                            <div class="row mb-4 py-0"
+                                style="background-image: url(assets/news-room-images/imageeight.png); background-size: cover;">
+                                <!-- Title Section -->
+                                <div
+                                    class="col-12 col-md-4 d-flex align-items-center justify-content-center text-center text-md-start">
+                                    <h3 class="banner-title text-white">
+                                        Get Every Single Update Here.
+                                    </h3>
+                                </div>
+
+                                <!-- Description Section -->
+                                <div
+                                    class="col-12 col-md-4 d-flex align-items-center justify-content-center text-center">
+                                    <p class="banner-description text-white">
+                                        A list of recent press releases and news articles highlighting
+                                        important company updates, new services, and community
+                                        initiatives.
+                                    </p>
+                                </div>
+
+                                <!-- Dot Section -->
+                                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                                    <div class="ml-md-auto blue-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- News Cards start -->
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center mt-lg-5">
+                                <!-- Start-aligned card -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-self-start">
+                                    <div class="card crd-news mb-2">
+                                        <img src="./assets/news-room-images/imagetwo.png"
+                                            class="img-fluid rounded-start news-half-img" />
+                                        <div class="news-card-body px-3">
+                                            <h5 class="date-ok">25, February, 2019</h5>
+                                            <p class="break-news-text">
+                                                Breaking News: Stay Updated on PotoloLite's Latest Developments
+                                            </p>
+                                            <a href="" style="text-decoration: none;">Read more</a>
+                                            <p class="mb-0 hours-ago">5 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- End-aligned card -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-self-end">
+                                    <div class="card crd-news mb-2">
+                                        <img src="./assets/news-room-images/imagetwo.png"
+                                            class="img-fluid rounded-start news-half-img" />
+                                        <div class="news-card-body px-3">
+                                            <h5 class="date-ok">25, February, 2019</h5>
+                                            <p class="break-news-text">
+                                                Breaking News: Stay Updated on PotoloLite's Latest Developments
+                                            </p>
+                                            <a href="" style="text-decoration: none;">Read more</a>
+                                            <p class="mb-0 hours-ago">5 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- News Cards end -->
+
+                        <!-- media coverge section start -->
+                        <section class="media-coverage-section text-center py--lg-5 py-2">
+                            <div class="container">
+                                <p class="great-fam mt-lg-5 mt-2">Media Coverage Section
+                                </p>
+                                <!-- <h1 class="section-title mb-4 media-cover-top">Media Coverage Section</h1> -->
+                                <p class="section-description mb-5">
+                                    Stay informed about how PotoLoLite is making headlines! Here, you can
+                                    find articles, features, and news stories from various media outlets
+                                    that highlight our initiatives and community impact.
+                                </p>
+
+                                <div class="row justify-content-center align-items-center">
+                                    <!-- Featured Card -->
+                                    <div class="col-lg-5 col-12  bg-img position-relative"
+                                        style="background-image: url(assets/news-room-images/imagefour.png);  background-size: cover !important; background-position: 100% !important;border-radius: 10px !important; max-width: 420px; width: 100%; height: 450px;   border-radius: 10px; ">
+                                        <span class="badge badge-info text-end position-absolute"
+                                            style="top: 10px;right: 10px;">Featured
+                                        </span>
+                                        <div class="col-9 d-flex flex-column text-start px-3"
+                                            style="position: absolute; bottom: 10px;   left: 0;">
+                                            <h5 class=" text-white mt-2" style="font-family: Open Sans;
+                                            font-size: 13px;
+                                            font-weight: 600;
+                                            line-height: 19.07px;
+                                            ">
+                                                Potolo Partners with Local Farmers for Fresh Produce Delivery
+                                            </h5>
+                                            <p class="text-white" style="font-family: Open Sans;
+                                            font-size: 9px;
+                                            font-weight: 400;
+                                            line-height: 23.46px;
+                                            ">
+                                                Published by: GreenTech News | Date: September 27, 2024
+                                            </p>
+                                            <p class="text-white new-texti">
+
+                                                Potolo has announced a partnership with local farmers to
+                                                deliver fresh produce directly to consumers. This initiative
+                                                aims to support local agriculture while providing customers
+                                                with high-quality, fresh produce.
+                                            </p>
+                                            <a href="#" class="read-more-link">Read More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Other Articles -->
+                                    <div class="col-lg-7 col-12 article-cards" style="padding-inline: 22px;">
+                                        <div class="other-articles">
+                                            <!-- Article Card -->
+
+                                            <!-- Article Card -->
+                                            <div class="media text-start  d-flex flex-sm-row flex-column gap-3 mb-3">
+                                                <img src="./assets/news-room-images/imageseven.png"
+                                                    class="mr-3  h-auto article-img"
+                                                    style="width: 178px; height: 135px !important;"
+                                                    alt="Article Image" />
+                                                <div class="media-body">
+                                                    <h5 class="mt-0">
+                                                        Potolo Unveils Eco-Friendly Delivery Initiative
+                                                    </h5>
+                                                    <p class="small" style="margin-bottom: 0.2rem !important;">
+                                                        Published by: GreenTech News | Date: September 27, 2024
+                                                    </p>
+                                                    <p style="margin-bottom: 0.2rem !important;">
+                                                        Potolo launched a new eco-friendly delivery initiative using
+                                                        electric bikes to reduce carbon emissions.
+                                                    </p>
+                                                    <a href="#" class="read-more-link">Read more</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Article Card -->
+                                            <div class="media text-start  d-flex flex-sm-row flex-column gap-3 mb-3">
+                                                <img src="./assets/news-room-images/imagesix.png"
+                                                    class="mr-3  h-auto article-img" style="width: 178px;
+                        height: 135px !important;" alt="Article Image" />
+                                                <div class="media-body">
+                                                    <h5 class="mt-0">
+                                                        Potolo Unveils Eco-Friendly Delivery Initiative
+                                                    </h5>
+                                                    <p class="small" style="margin-bottom: 0.2rem !important;">
+                                                        Published by: GreenTech News | Date: September 27, 2024
+                                                    </p>
+                                                    <p style="margin-bottom: 0.2rem !important;">
+                                                        Potolo launched a new eco-friendly delivery initiative using
+                                                        electric bikes to reduce carbon emissions.
+                                                    </p>
+                                                    <a href="#" class="read-more-link">Read more</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Article Card -->
+                                            <div class="media text-start  d-flex flex-sm-row flex-column gap-3">
+                                                <img src="./assets/news-room-images/imageseven.png"
+                                                    class="mr-3  h-auto article-img"
+                                                    style="width: 178px;            height: 135px !important;"
+                                                    alt="Article Image" />
+                                                <div class="media-body">
+                                                    <h5 class="mt-0">
+                                                        Potolo Unveils Eco-Friendly Delivery Initiative
+                                                    </h5>
+                                                    <p class="small" style="margin-bottom: 0.2rem !important;">
+                                                        Published by: GreenTech News | Date: September 27, 2024
+                                                    </p>
+                                                    <p style="margin-bottom: 0.2rem !important;">
+                                                        Potolo launched a new eco-friendly delivery initiative using
+                                                        electric bikes to reduce carbon emissions.
+                                                    </p>
+                                                    <a href="#" class="read-more-link">Read more</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- upcoming events start -->
+
+                    <section style="background: #f2fbfd">
+                        <div class="container pt-lg-5 pt-4 pb-lg-3 pb-4">
+                            <!-- <h1 class="section-title mb-4 text-center">Upcoming Events</h1> -->
+                            <p class="great-fam">Upcoming Events
+                            </p>
+
+                            <div>
+
+                                <p class="section-description mb-5 text-center ">
+                                    Join us for exciting events and initiatives that bring our community
+                                    together! Below are our upcoming events where you can learn more about
+                                    PotoloLite and our mission.
+                                </p>
+
+                            </div>
+
+                            <div class="row">
+                                <!-- Event Card 1 -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class=" event-card mx-auto mt-5" style="max-width: 600px">
+                                        <div class="position-relative">
+                                            <img src="./assets/news-room-images/imagenine.png"
+                                                class="event-imgg rounded-top" alt="Event Image" />
+                                            <div class="date-badge-ok position-absolute top-0 text-white text-center m-2 p-1"
+                                                style="right: 15px !important;">
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0 date-badge-ok1">OCT</p>
+                                                    <p class="mb-0 date-badge-ok1">25</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body-sustain text-white rounded-bottom"
+                                            style="background: #f2fbfd">
+                                            <p class="sustain-practice-h mb-0 text-dark pt-4">
+                                                "Sustainable Practices for Local Businesses: A Webinar"
+                                            </p>
+                                            <p class="card-subtitle-evnt mb-0">
+                                                Location: Virtual Webinar
+                                            </p>
+                                            <p class="card-text-event">
+                                                Description: Join us for a webinar discussing sustainable practices in
+                                                local businesses. Learn how PotoloLite supports eco-friendly
+                                                initiatives.
+                                            </p>
+                                            <a href="#" class="event-register" style="color: #00ADD4; font-family: Open Sans;
+                                            font-size: 14.5px;
+                                            font-weight: 400;
+                                            line-height: 18px;
+                                            text-align: left; ">
+                                                Register
+                                                Here
+                                            </a>
+                                            <!-- <a href="#" class="btn btn-link text-info text-decoration-none"></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Event Card 2 -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class=" event-card mx-auto mt-5" style="max-width: 600px">
+                                        <div class="position-relative">
+                                            <img src="./assets/news-room-images/imageten.png"
+                                                class="event-imgg rounded-top" alt="Event Image" />
+                                            <div class="date-badge-ok position-absolute top-0 text-white text-center m-2 p-1"
+                                                style="right: 15px !important;">
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0 date-badge-ok1">OCT</p>
+                                                    <p class="mb-0 date-badge-ok1">25</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body-sustain text-white rounded-bottom"
+                                            style="background: #f2fbfd">
+                                            <p class="sustain-practice-h mb-0 text-dark pt-4">
+                                                "Sustainable Practices for Local Businesses: A Webinar"
+                                            </p>
+                                            <p class="card-subtitle-evnt mb-0">
+                                                Location: Virtual Webinar
+                                            </p>
+                                            <p class="card-text-event">
+                                                Description: Join us for a webinar discussing sustainable practices in
+                                                local businesses. Learn how PotoloLite supports eco-friendly
+                                                initiatives.
+                                            </p>
+                                            <a href="#" class="event-register" style="color: #00ADD4; font-family: Open Sans;
+                                            font-size: 14.5px;
+                                            font-weight: 400;
+                                            line-height: 18px;
+                                            text-align: left; ">
+                                                Register
+                                                Here
+                                            </a>
+                                            <!-- <a href="#" class="btn btn-link text-info text-decoration-none"></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Event Card 3 -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class=" event-card mx-auto mt-5" style="max-width: 600px">
+                                        <div class="position-relative">
+                                            <img src="./assets/news-room-images/imageeleven.png"
+                                                class="event-imgg rounded-top" alt="Event Image" />
+                                            <div class="date-badge-ok position-absolute top-0 text-white text-center m-2 p-1"
+                                                style="right: 15px !important;">
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0 date-badge-ok1">OCT</p>
+                                                    <p class="mb-0 date-badge-ok1">25</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body-sustain text-white rounded-bottom"
+                                            style="background: #f2fbfd">
+                                            <p class="sustain-practice-h mb-0 text-dark pt-4">
+                                                "Sustainable Practices for Local Businesses: A Webinar"
+                                            </p>
+                                            <p class="card-subtitle-evnt mb-0">
+                                                Location: Virtual Webinar
+                                            </p>
+                                            <p class="card-text-event">
+                                                Description: Join us for a webinar discussing sustainable practices in
+                                                local businesses. Learn how PotoloLite supports eco-friendly
+                                                initiatives.
+                                            </p>
+                                            <a href="#" class="event-register" style="color: #00ADD4; font-family: Open Sans;
+                                            font-size: 14.5px;
+                                            font-weight: 400;
+                                            line-height: 18px;
+                                            text-align: left; ">
+                                                Register
+                                                Here
+                                            </a>
+                                            <!-- <a href="#" class="btn btn-link text-info text-decoration-none"></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- form section -->
+                    <section class="contact-section container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-5 d-flex flex-column  ">
+                                    <h3>Contact us</h3>
+                                    <p>Reach out us for any quarry</p>
+
+                                    <input class="p-2 ps-2 mt-2 me-sm-5 border rounded inputs-borders-cust" type="text"
+                                        placeholder="First Name">
+                                    <input class="p-2 mt-2 me-sm-5 border rounded inputs-borders-cust" type="email"
+                                        placeholder="Email">
+                                    <textarea class="p-2 mt-2 me-sm-5 border rounded" placeholder="Message"
+                                        rows="4"></textarea> <!-- Added Textarea -->
+
+
+
+                                    <button class="btn-submit p-1 mt-3 me-sm-5 " type="submit">Submit</button>
+                                </div>
+                                <!-- Map Section -->
+                                <div class="col-lg-5">
+                                    <div class="map-bg">
+                                        <img src="./assets/business-section-images/map-bg.png" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                    <!-- content 04 -->
+
+                    <!-- <h3>Content for Tab 4</h3>
+                    <p>Insert your data for Tab 4 here.</p> -->
+                    <!-- ######## Begin Investor Relationship page Ali Haider 396 ######## -->
+
+                    <!-- <div class=" px-sm-5 "> -->
+                    <div>
+                        <div class="whole-bg2">
+                            <div class="container">
+                                <div class="row d-flex justify-content-center align-items-center">
+
+                                    <div class="col-10 col-md-11 col-lg-6 p-sm-5 align-center">
+                                        <p class="mb-0 hero-sention-first-heading"><span class="">Investing</span> in a
+                                            Sustainable Future
+                                        </p>
+                                        <p class="mb-1 hero-sention-sec-heading">Join Potolo in Empowering Communities
+                                            Through <span class="">Innovative Solutions</span>
+                                        </p>
+                                        <p class="pe-4 investors-p">At PotoloLite, we are dedicated to driving growth
+                                            while promoting
+                                            sustainability and community empowerment. Our commitment to transparency and
+                                            accountability ensures that our investors are informed and engaged as we
+                                            continue to expand our reach and impact.
+                                        </p>
+                                        <div class=" d-flex justify-content-start align-items-center gap-4 w-100">
+                                            <div class="" style="margin-top: 43px;">
+                                                <a href="">
+                                                    <button
+                                                        class="btn lrn-btn1 d-flex justify-content-center align-items-center">View
+                                                        Financial Report
+                                                        <img class="ms-3"
+                                                            src="./assets/business-section-images/white-aro.png"
+                                                            style="width: 20.09px;height: 8px;">
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <div class="" style="margin-top: 43px;">
+                                                <a href="">
+                                                    <button class="lrn-btn me-2">Learn Our Stagey
+                                                        <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                            class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-md-11 col-lg-6">
+                                        <img src="/assets/investor-images/Group 18195.png" alt="" class="img-fluid">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vis-bg">
+                            <div class="text-center p-sm-5  sec-2  ">
+                                <h3 class="mt-4">Explore Investment Opportunities with Potolo</h3>
+                                <p class="mt-4 investors-p1">At PotoloLite, we belive in building partnerships that
+                                    drive
+                                    sustainable
+                                    growth. Our
+                                    innovative provide
+                                    unique investment opportunities that align with our mission of empowering
+                                    communities
+                                    and promoting
+                                    enviormental responsibility.
+                                </p>
+                            </div>
+
+
+                            <div class="container ">
+                                <div
+                                    class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                    <!-- <div class="col-1"></div> -->
+                                    <div class="col-11 col-md-11 col-lg-6 ir_sect1">
+                                        <img src="/assets/investor-images/invest-delivry.png" class="img-fluid"
+                                            style="width: 100%; max-width: 500px; height: 410px;" alt="">
+                                    </div>
+                                    <!-- <div class="col-2"></div> -->
+                                    <div class=" col-11 col-md-11 col-lg-6">
+                                        <div class=" resp992">
+                                            <p class="delivry-h">Sustainable Delivery Services</p>
+                                            <p class="vision-p" style="width: 75%;">
+
+                                                Description: Invest in our eco-friendly delivery solutions that reduce
+                                                carbon footprints while enhancing customer satisfaction.
+                                            </p>
+                                            <div class="" style="margin-top: 29px;">
+                                                <a href="#">
+                                                    <button class="lrn-btn me-2">Learn More
+                                                        <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                            class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <div class="row d-flex  my-sm-5 py-5 align-items-center justify-content-center">
+                                <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                    <div class=" resp992">
+                                        <p class="delivry-h">Local Sourcing Partnerships</p>
+                                        <p class="sourcing-p">
+
+                                            Description: Support our initiatives to partner with local farmer and
+                                            businesses,
+                                            promoting
+                                            community
+                                            development and sustainable practices. </p>
+                                        <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-3">Get involved
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect2">
+                                    <img src="/assets/investor-images/Rectangle 4533.png"
+                                        style="max-width: 500px; width: 100%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container ">
+                            <div
+                                class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <!-- <div class="col-1"></div> -->
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect1">
+                                    <img src="/assets/investor-images/tech-innovation-img.png" class="img-fluid"
+                                        style="width: 100%; max-width: 500px; height: 410px;" alt="">
+                                </div>
+                                <!-- <div class="col-2"></div> -->
+                                <div class=" col-11 col-md-11 col-lg-6">
+                                    <div class=" resp992">
+                                        <p class="delivry-h">Technology Innovations</p>
+                                        <p class="vision-p" style="width: 75%;">
+
+                                            Description: Participate in the growth of our cutting-edge technology
+                                            solutions aimed at improving efficiency and accessibility in service
+                                            delivery. </p>
+                                        <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-3">Discover Opportunities
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vis-bg">
+                            <div class="container">
+                                <div class="row d-flex  my-sm-5 py-5 align-items-center justify-content-center">
+                                    <div class=" col-11 col-md-11 col-lg-5">
+                                        <div class=" resp992">
+                                            <p class="delivry-h">Earn Money With Us <br> Quickly And Easily</p>
+                                            <p class="earn-p" style="padding-right: 42px;">
+                                                At PotoloLite, we offer flexible and rewarding
+                                                opportunities for individuals and businesses to generate income through
+                                                our innovative platform. Whether you’re a local business looking to
+                                                expand
+                                                your reach or an entrepreneur eager to collaborate, our easy-to-use
+                                                tools and
+                                                supportive community will help you maximize your earnings. Join us today
+                                                and start earning effortlessly while making a positive impact in your
+                                                community!
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-11 col-md-11 col-lg-6  ir_sect4">
+                                        <img src="/assets/investor-images/Rectangle 4533 (1).png"
+                                            style="max-width: 500px; width: 100%;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="contact-section container">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="row d-flex  align-items-center justify-content-between">
+                                    <div class="col-lg-5 d-flex flex-column  ">
+                                        <h3>Contact us</h3>
+                                        <p>Reach out us for any quarry</p>
+
+                                        <input class="p-2 ps-2 mt-2 me-sm-5 border rounded inputs-borders-cust"
+                                            type="text" placeholder="First Name">
+                                        <input class="p-2 mt-2 me-sm-5 border rounded inputs-borders-cust" type="email"
+                                            placeholder="Email">
+                                        <textarea class="p-2 mt-2 me-sm-5 border rounded" placeholder="Message"
+                                            rows="4"></textarea> <!-- Added Textarea -->
+
+
+
+                                        <button class="btn-submit p-1 mt-3 me-sm-5 " type="submit">Submit</button>
+                                    </div>
+                                    <!-- Map Section -->
+                                    <div class="col-lg-5">
+                                        <div class="map-bg">
+                                            <img src="./assets/business-section-images/map-bg.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <!-- ######## Begin Investor Relationship page Ali Haider 396 ######## -->
+
+                </div>
+
+
+                <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                    <!-- content 05 -->
+                    <div class="whole-bg2">
+                        <div class="container">
+                            <div class="row pt-5">
+
+
+                                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                                    <p class="mb-0 about-potolo-h mb-4 momnt-ptolo pe-lg-4">Join the <span
+                                            class="about-potolo-h1 momnt-ptolo"
+                                            style="font-weight: 600 !important;">Eco-Actions</span> Movement with Potolo
+                                    </p>
+                                    <p class="mb-0 about-potolo-detail pe-lg-5">
+                                        Sustainability being a crucial issue, at POTOLO, it is the core of what we do.
+                                        From the meeting of the corporate and personal interest, we ensure the reduction
+                                        of the environmental footprint in our operations. We deliver our goods using
+                                        eco-friendly methods, such as electric bike delivery, generating very little to
+                                        no carbon emission. The other eco-friendly project includes food donations that
+                                        support the local community, reduce the waste, and foster sales of the local
+                                        producers.
+                                    </p>
+                                    <div class=" d-flex justify-content-start align-items-center gap-4 w-100">
+                                        <div class="" style="margin-top: 43px;">
+                                            <button
+                                                class="btn lrn-btn1 d-flex justify-content-center align-items-center">Download
+                                                App
+                                                <img class="ms-3" src="./assets/business-section-images/white-aro.png"
+                                                    style="width: 20.09px;height: 8px;">
+                                            </button>
+                                        </div>
+                                        <div class="" style="margin-top: 43px;">
+
+                                            <button class="lrn-btn me-2">Learn More
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- https://www.youtube.com/embed/c5cDgfnsnPM?si=PVDrBN3o6-1TuJui -->
+                                    <!-- <img class="img-fluid" style="width: 100%;"
+                                        src="./assets/business-section-images/busines-hero.png"> -->
+                                    <div class="video-container">
+                                        <video id="eco-video" poster="./assets/business-section-images/poster (2).png"
+                                            loop>
+                                            <source src="./assets/business-section-images/videoo.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="play-button" id="play-button">
+                                            <img src="./assets/business-section-images/icon.png" alt="Play"
+                                                style="width: 12px; height: 16px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *********  Hero section *********** -->
+                    <!-- ********* Explore Our Eco-Actions On-Demand Services start *********** -->
+                    <div class="vis-bg">
+                        <div class="container mt-lg-5 pt-lg-5">
+                            <div
+                                class="row mt-sm-5 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <!-- <div class="col-1"></div> -->
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect1">
+                                    <img src="/assets/ecoaction-images/exp-eco.png" class="img-fluid"
+                                        style="width: 100%; max-width: 500px;" alt="">
+                                </div>
+                                <!-- <div class="col-2"></div> -->
+                                <div class=" col-11 col-md-11 col-lg-6">
+                                    <div class="mt-lg-3 mt-5">
+                                        <p class="delivry-h andd">Explore Our Eco-Actions On-Demand Services</p>
+                                        <p class="vision-p anti-discri-width">
+
+                                            At PotoloLite, we offer a diverse range of on-demand services, including
+                                            food
+                                            delivery, grocery shopping, and more, all designed to support local
+                                            businesses.
+                                            Our commitment to sustainability ensures that every order contributes to
+                                            reducing waste and promoting eco-friendly practices. </p>
+                                        <!-- <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+    
+                                                </button>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ********* Explore Our Eco-Actions On-Demand Services end *********** -->
+                    <!-- ********* Our Commitment start *********** -->
+
+                    <div class="container">
+                        <div class="row d-flex  my-sm-5 py-5 align-items-center justify-content-center">
+                            <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                <div class=" ">
+                                    <p class="explor-bus">Empowering Local Businesses, One Delivery at a Time</p>
+                                    <p class="sourcing-p">
+
+                                        With PotoloLite, you can support local businesses while enjoying the
+                                        convenience of on-demand services. Our app connects you to a variety of
+                                        local vendors, ensuring fresh, sustainable options at your fingertips.
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <div class="fifty-percent-h">50%</div>
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <p class="fifty-percent-p">Shop local and reduce your carbon
+                                                        footprint.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fifty-percent-h">50%</div>
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <p class="fifty-percent-p">Shop local and reduce your carbon
+                                                        footprint.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="margin-top: 29px;">
+                                        <a href="#">
+                                            <button class="lrn-btn me-3">Learn More
+                                                <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                    class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-11 col-md-11 col-lg-6 ir_sect2">
+                                <img src="./assets/ecoaction-images/Rectangle 4533.png"
+                                    style="max-width: 500px; width: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ********* Sustainable solutions start *********** -->
+                    <div class="vis-bg">
+                        <div class="container mt-lg-5 pt-lg-5">
+                            <div
+                                class="row mt-sm-5 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <!-- <div class="col-1"></div> -->
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect1">
+                                    <img src="/assets/ecoaction-images/cycle-grocery.png" class="img-fluid"
+                                        style="width: 100%; max-width: 500px; height: 410px;" alt="">
+                                </div>
+                                <!-- <div class="col-2"></div> -->
+                                <div class=" col-11 col-md-11 col-lg-6">
+                                    <div class=" mt-lg-5 mt-5">
+                                        <p class="delivry-h andd">Sustainable Solutions for a Greener Tomorrow</p>
+                                        <p class="vision-p anti-discri-width">
+
+                                            At PotoloLite, we prioritize eco-friendly practices that benefit both our
+                                            customers and the planet. By utilizing electric bikes for deliveries and
+                                            actively reducing food waste, we contribute to a more sustainable community.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ********* Sustainable solutions end *********** -->
+
+                    <!-- *********Our Commitment to a Greener Future *********** -->
+                    <div class="vis-bg">
+                        <div class="pt-lg-3 pb-lg-5">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <p class="delivry-h text-center">Our Commitment to a Greener
+                                    Future</p>
+
+
+                                <p class="vision-p text-center px-lg-5 mx-lg-5 mb-5"
+                                    style="font-size: 14px; max-width: 50rem;">
+                                    At PotoloLite, we prioritize eco-friendly practices to protect our planet. From
+                                    using
+                                    electric bikes for deliveries to sustainable packaging, every initiative counts.
+                                </p>
+                            </div>
+
+                            <!-- cards -->
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+                                        <div class="card-green h-100 px-2">
+                                            <div class="d-flex justify-content-center pt-2">
+                                                <img src="./assets/ecoaction-images/Rectangle 4541.png"
+                                                    class="card-green-img img-fluid">
+                                            </div>
+                                            <div class="card-body px-0 mb-3">
+                                                <p class="electric-bike-h mb-2 mt-3">Electric Bikes for Sustainable
+                                                    Deliveries</p>
+                                                <p class="electric-bike-p mb-0">Our electric bikes reduce carbon
+                                                    emissions while ensuring fast delivery.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+                                        <div class="card-green h-100 px-2">
+                                            <div class="d-flex justify-content-center pt-2">
+                                                <img src="./assets/ecoaction-images/green-commitment (1).png"
+                                                    class="card-green-img img-fluid">
+                                            </div>
+                                            <div class="card-body px-0 mb-3">
+                                                <p class="electric-bike-h mb-2 mt-3">Electric Bikes for Sustainable
+                                                    Deliveries</p>
+                                                <p class="electric-bike-p mb-0">Our electric bikes reduce carbon
+                                                    emissions while ensuring fast delivery.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+                                        <div class="card-green h-100 px-2">
+                                            <div class="d-flex justify-content-center pt-2">
+                                                <img src="./assets/ecoaction-images/green-commitment (2).png"
+                                                    class="card-green-img img-fluid">
+                                            </div>
+                                            <div class="card-body px-0 mb-3">
+                                                <p class="electric-bike-h mb-2 mt-3">Electric Bikes for Sustainable
+                                                    Deliveries</p>
+                                                <p class="electric-bike-p mb-0">Our electric bikes reduce carbon
+                                                    emissions while ensuring fast delivery.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class=" d-flex justify-content-start align-items-center gap-4 w-100">
+                                        <div class="" style="margin-top: 43px;">
+                                            <button
+                                                class="btn lrn-btn1 d-flex justify-content-center align-items-center">Learn
+                                                More
+                                                <img class="ms-3" src="./assets/business-section-images/white-aro.png"
+                                                    style="width: 20.09px;height: 8px;">
+                                            </button>
+                                        </div>
+                                        <div class="" style="margin-top: 43px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Join Us
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- cards -->
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- ********* Meet Our Team end *********** -->
+
+                </div>
+                <!-- ************************ Eco-Actions Page end **************************** -->
+
+
+                <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab6-tab">
+                    <!-- content 06 -->
+                    <!-- <h3>Content for Tab 6</h3>
+                    <p>Insert your data for Tab 6 here.</p> -->
+                    <!--<#####> Accessibility Policy Section <#####>-->
+                    <div class="whole-bg4">
+                        <div class="container">
+                            <div class="row " style="padding-top: 37px;">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <p class="legal-h mb-3">Legal</p>
+                                    <p class="mb-0 about-potolo-detail">
+                                        At POTOLO, we prioritize transparency and compliance through our
+                                        comprehensive legal policies. These documents ensure that we
+                                        uphold the highest standards of integrity and responsibility in
+                                        our operations.
+                                    </p>
+                                    <div class="" style="margin-top: 43px;">
+                                        <a href=""> <button
+                                                class="btn lrn-btn1 d-flex justify-content-center align-items-center">See
+                                                Details
+                                                <img class="ms-3" src="./assets/business-section-images/white-aro.png"
+                                                    style="width: 20.09px;height: 8px;">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid" style="width: 100%;" src="./assets/legal-images/image01.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<#####> Anti-Discrimination Policy Section <#####>-->
+                    <div class="vis-bg">
+                        <div class="container mt-lg-5">
+                            <div
+                                class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <!-- <div class="col-1"></div> -->
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect1">
+                                    <img src="/assets/legal-images/anti-descrimination-img.png" class="img-fluid"
+                                        style="width: 100%;" alt="">
+                                </div>
+                                <!-- <div class="col-2"></div> -->
+                                <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                    <div class="mt-lg-5 mt-3">
+                                        <p class="delivry-h">Anti-Discrimination Policy</p>
+                                        <p class="vision-p anti-discri-width">
+
+                                            At POTOLO, we offer an Anti-Discrimination Policy, which is aimed at
+                                            creating an environment, where all the employees have equal opportunities,
+                                            and social and professional differences do not reflect on employment and
+                                            working conditions. The regulations cover both recruiting and working
+                                            processes, protecting people from discrimination based on race, color,
+                                            religion, gender, sexual orientation, age, disability,
+                                        </p>
+                                        <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<#####> Accessibility Policy Section <#####>-->
+                    <div class="low-barrier-bg">
+                        <div class="container mt-lg-5">
+                            <div
+                                class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                    <div class=" mt-lg-5 mt-3">
+                                        <p class="delivry-h">Accessibility Policy</p>
+                                        <p class="vision-p" style="font-family: Open Sans;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 21.79px; ">
+
+                                            POTOLO is committed to ensuring that all individuals, including
+                                            those with disabilities, are able to access our services and
+                                            facilities. Our Accessibility Policy demonstrates our dedication
+                                            to developing an inclusive environment for all users. We are
+                                            committed to eliminating barriers for our clients and ensuring
+                                            that everyone has equal access to information, technology, and
+                                            spaces in question. We regularly assess our services and
+                                            facilities to identify shortcomings and implement necessary
+                                            changes. In addition, we provide our employees with training to
+                                            improve their awareness and understanding of accessibility issues.
+                                            The emphasis on accessibility helps POTOLO ensure that all
+                                            individuals can effectively participate in our services, fostering
+                                            a sense of belonging and community. </p>
+                                        <!-- <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+    
+                                                </button>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-11 col-md-11 col-lg-6 ">
+                                    <img src="./assets/legal-images/image03.png" class="img-fluid" style="width: 100%;"
+                                        alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<#####> 3rd Party Vendor agreement Section <#####>-->
+
+                    <div class="vis-bg">
+                        <div class="container mt-lg-0 pt-lg-0">
+                            <div
+                                class="row mt-sm-5 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect1 mt-5">
+                                    <img src="/assets/legal-images/3rd-vendor-img.png" class="img-fluid"
+                                        style="width: 100%;" alt="">
+                                </div>
+                                <div class=" col-11 col-md-11 col-lg-6">
+                                    <div class="ps-lg-4">
+                                        <p class="delivry-h andd">3rd Party Vendor agreement</p>
+                                        <p class="vision-p anti-discri-width">
+                                            The 3rd Party Vendor Agreement here at POTOLO allows us to
+                                            establish certain rules and guidelines for our relationships with
+                                            external providers. The Agreement covers such important aspects as
+                                            the duties and rights of each of the parties, their
+                                            responsibilities and their obligations. It is valid for all our
+                                            vendors and contains a number of provisions concerning the quality
+                                            of services provided, confidentiality, and data protection
+                                            important for us and our customers.  ATTACHMENT
+                                        </p>
+                                        <!-- <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+    
+                                                </button>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<#####> SLA Service Level Agreements Section <#####>-->
+
+                    <div class="low-barrier-bg">
+                        <div class="container mt-lg-5">
+                            <div
+                                class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                    <div class=" ">
+                                        <p class="delivry-h">SLA Service Level Agreements</p>
+                                        <p class="vision-p" style="font-family: Open Sans;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 21.79px; ">
+
+                                            Service Level Agreements are the definitions of the level of
+                                            service that POTOLO provides to its clients. These agreements are
+                                            used internally and with clients to ensure the service quality and
+                                            transparency. The SLA determines the level of service according to
+                                            specified performance measures, such as response time, the
+                                            availability of the service, and quality of performance. Providing
+                                            concrete explanations of expected results, we aim to satisfy the
+                                            clients and enable trust. The SLA also indicates what the service
+                                            provider has to do if it fails to provide service, for example,
+                                            the clients are reimbursed if the service does not work. 
+                                            ATTACHMENT
+                                        </p>
+                                        <!-- <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+    
+                                                </button>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-11 col-md-11 col-lg-6 ">
+                                    <img src="./assets/legal-images/image05.png" class="img-fluid" style="width: 100%;"
+                                        alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<#####> Intellectual Property Section <#####>-->
+
+                    <div class="">
+                        <div class="container mt-lg-5">
+                            <div
+                                class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <!-- <div class="col-1"></div> -->
+                                <div class="col-11 col-md-11 col-lg-6 ir_sect1 mt-lg-1 mt-5">
+                                    <img src="./assets/legal-images/inovaton-img.png" class="img-fluid"
+                                        style="width: 100%;" alt="">
+                                </div>
+                                <!-- <div class="col-2"></div> -->
+                                <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                    <div class="">
+                                        <p class="delivry-h">Intellectual Property</p>
+                                        <p class="vision-p anti-discri-width">
+
+                                            In POTOLO, the Intellectual Property policy is developed to
+                                            protect our innovations, creations, and proprietary information.
+                                            We understand that preserving intellectual property rights is
+                                            critical as it allows us to compete efficiently and inspires
+                                            creativity; thus, this policy describes guidelines for
+                                            identifying, documenting, and protecting employees’ </p>
+                                        <div class="" style="margin-top: 29px;">
+                                            <a href="#">
+                                                <button class="lrn-btn me-2">Learn More
+                                                    <img src="./assets/business-section-images/learn-more-arrow.png"
+                                                        class="ms-1" style="width: 22.09px;height: 8px;">
+
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<#####> Health Compliance Policy Section <#####>-->
+
+                    <div class="low-barrier-bg">
+                        <div class="container mt-lg-5">
+                            <div
+                                class="row mt-sm-0 mb-sm-5 pt-sm-4 pb-sm-5 d-flex align-items-center justify-content-center sec-3">
+                                <div class=" col-11 col-md-11 col-lg-6 ps-lg-5">
+                                    <div class="mt-5">
+                                        <p class="delivry-h">Health Compliance Policy</p>
+                                        <p class="vision-p" style="font-family: Open Sans;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 21.79px; ">
+
+                                            POTOLO’s Health Compliance Policy is intended to ensure safe and
+                                            sound environment for our employees, clients and stakeholders. We
+                                            are committed to follow all applicable health regulations and
+                                            standards in the company, including those related to workplace
+                                            safety, hygiene and emergency. We conduct regular assessments and
+                                            training to ensure that our staff is health-conscious. The policy
+                                            is also accompanied by procedures for reporting and incident
+                                            management. ATTACHMENT
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="col-11 col-md-11 col-lg-6 ">
+                                    <img src="./assets/legal-images/image07.png" class="img-fluid" style="width: 100%;"
+                                        alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- ********* Menus end *********** -->
+    <!-- ********* Footer start *********** -->
+    <div class="bg-ft mt-lg-5">
+        <div class="container">
+            <footer>
+
+                <div class="row ">
+                    <div class="col-lg-3 mt-5">
+                        <div class="d-flex align-items-center gap-2 ps-4">
+                            <img class="img-fluid logo-img" src="./assets/business-section-images/logo-img.png">
+                            <p class="logo-name mb-0">Potolo</p>
+                        </div>
+                        <p class="ft1 mt-4" style="width: 75%;">
+                            OurStudio is a digital agency
+                            UI / UX Design and Website
+                            Development located in Ohio,
+                            United States of America
+                        </p>
+                        <p class="ft2 mt-4">Copyright Satyam Studio</p>
+                    </div>
+
+
+
+                    <div class="col-lg-2 mt-5">
+                        <p class="ft-service-h mb-0">Service</p>
+                        <ul class="no-bullets mt-4 mb-0">
+                            <li class="ft1 mb-0"><a href="#">Illustration</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Mobile Design</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Motion Graphic</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Web Design</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Development</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">SEO</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 mt-5">
+                        <p class="ft-service-h mb-0">Company</p>
+                        <ul class="no-bullets mt-4 mb-0">
+                            <li class="ft1 mb-0"><a href="#">Service</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Features</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Our Team</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Portfolio</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Blog</a></li>
+                            <li class="ft1 mt-3 mb-0"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 mt-5">
+                        <p class="ft-service-h mb-0">Join a Newsletter</p>
+                        <label class="email-hd mt-4">Your Email</label>
+                        <div class="navbar bg-body-tertiary">
+                            <div class="container-fluid px-0">
+                                <form class="d-sm-flex gap-2" role="search">
+                                    <input class="form-control field-email me-2" type="Email"
+                                        placeholder="Enter Your Email" aria-label="Search">
+                                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                                </form>
+                                <div class="d-flex gap-3 mt-3">
+                                    <div class="ecllipse-cyan">
+                                        Dr
+                                    </div>
+                                    <div class="ecllipse-cyan">
+                                        Be
+                                    </div>
+                                    <div class="ecllipse-cyan">
+                                        Lg
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hr-line mt-4 mb-4" style="border: 1px solid #76AEFF"></div>
+                </div>
+
+                <div class="row d-sm-flex flex-wrap pb-4">
+                    <div class="d-sm-flex justify-content-between">
+                        <div class="col-lg-5">
+                            <div>
+                                <p class="ft2 mt-3 mb-3">Copyright Satyam Studio</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="d-sm-flex justify-content-between">
+                                <div class="mt-3 mb-3 d-flex gap-2">
+                                    <img src="./assets/business-section-images/location_on.png"
+                                        style="width: 22px; height: 22px;">
+                                    <p class="ft1 mb-0">8819 Ohio St. South Gate, CA 90280</p>
+                                </div>
+
+                                <div class="mt-3 mb-3 d-flex gap-2">
+                                    <img src="./assets/business-section-images/email.png"
+                                        style="width: 22px; height: 22px;">
+                                    <p class="ft1 mb-0">Ourstudio@hello.com</p>
+                                </div>
+
+                                <div class="mt-3 mb-3 d-flex gap-2">
+                                    <img src="./assets/business-section-images/call.png"
+                                        style="width: 22px; height: 22px;">
+                                    <p class="ft1 mb-0">+1 386-688-3295</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+    <!-- ********* Footer end *********** -->
+    <!-- ********* Body end  *********** -->
+
+
+    <!-- Nav tabs scroller js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabWrapper = document.querySelector('.tab-wrapper');
+            const tabList = document.querySelector('.nav-tabs');
+            const scrollLeftBtn = document.querySelector('.scroll-left');
+            const scrollRightBtn = document.querySelector('.scroll-right');
+
+            function updateScrollButtons() {
+                const canScrollLeft = tabList.scrollLeft > 0;
+                const canScrollRight = tabList.scrollLeft < tabList.scrollWidth - tabList.clientWidth;
+
+                scrollLeftBtn.style.display = canScrollLeft ? 'block' : 'none';
+                scrollRightBtn.style.display = canScrollRight ? 'block' : 'none';
+            }
+
+            function scrollTabs(direction) {
+                const scrollAmount = tabWrapper.clientWidth / 2;
+                tabList.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            scrollLeftBtn.addEventListener('click', () => scrollTabs(-1));
+            scrollRightBtn.addEventListener('click', () => scrollTabs(1));
+
+            tabList.addEventListener('scroll', updateScrollButtons);
+            window.addEventListener('resize', updateScrollButtons);
+
+            // Initial check to see if scroll buttons are needed
+            updateScrollButtons();
+        });
+    </script>
+
+    <!-- cards-carousel js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.carousel-track');
+            const cards = document.querySelectorAll('.carousel-card');
+            const cardWidth = cards[0].offsetWidth + 14; // 14px is the gap
+            let isDragging = false;
+            let startX, scrollLeft;
+
+            // Hide the buttons
+            const prevButton = document.querySelector('.carousel-button.prev');
+            const nextButton = document.querySelector('.carousel-button.next');
+            prevButton.style.display = 'none';
+            nextButton.style.display = 'none';
+
+            // Update scroll position manually when buttons are clicked
+            function moveSlider(direction) {
+                const maxScrollLeft = track.scrollWidth - track.clientWidth;
+                if (direction === 'next') {
+                    track.scrollLeft = Math.min(track.scrollLeft + cardWidth, maxScrollLeft);
+                } else {
+                    track.scrollLeft = Math.max(track.scrollLeft - cardWidth, 0);
+                }
+            }
+
+            prevButton.addEventListener('click', () => moveSlider('prev'));
+            nextButton.addEventListener('click', () => moveSlider('next'));
+
+            // Mouse drag events
+            track.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                startX = e.pageX - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+            });
+
+            track.addEventListener('mouseleave', () => {
+                isDragging = false;
+            });
+
+            track.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            track.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                e.preventDefault();
+                const x = e.pageX - track.offsetLeft;
+                const walk = (x - startX) * 2; // The 2 is for scroll speed
+                track.scrollLeft = scrollLeft - walk;
+            });
+
+            // Touch events for mobile
+            track.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+                isDragging = true;
+            });
+
+            track.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const x = e.touches[0].pageX - track.offsetLeft;
+                const walk = (x - startX) * 2;
+                track.scrollLeft = scrollLeft - walk;
+            });
+
+            track.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+        });
+
+    </script>
+
+    <!-- ***********************video-play-script************************ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('eco-video');
+            const playButton = document.getElementById('play-button');
+
+            playButton.addEventListener('click', togglePlayPause);
+            video.addEventListener('click', togglePlayPause);
+
+            function togglePlayPause() {
+                if (video.paused) {
+                    video.play();
+                    playButton.classList.add('hidden');
+                } else {
+                    video.pause();
+                    playButton.classList.remove('hidden');
+                }
+            }
+
+            video.addEventListener('ended', function () {
+                playButton.classList.remove('hidden');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
