@@ -87,6 +87,8 @@
 .badge-info {
   background-color: #00aaff;
   font-size: 0.9rem;
+  border-radius: 20px !important;
+  font-weight: 400;
 }
 
 .read-more-link {
