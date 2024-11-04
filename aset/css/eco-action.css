@@ -1,0 +1,630 @@
+/* Default Styles for All Tabs */
+.nav-tabs .nav-link-blue {
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    color: #999A9D;
+    border: none;
+    /* Remove all borders */
+    border-bottom: 3px solid transparent;
+    /* Invisible border to prevent jumping */
+    background-color: transparent;
+    /* No background */
+}
+
+/* Hover Effect */
+.nav-tabs .nav-link-blue:hover {
+    color: #00ADD4;
+    /* Optional hover color */
+    border-bottom: 3px solid transparent;
+    /* Keeps hover without shifting layout */
+}
+
+/* Active Tab Styles */
+.nav-tabs .nav-link-blue.active {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #00ADD4;
+    /* Change text color for active tab */
+    border-bottom: 3px solid #00ADD4;
+    /* Add a 3px solid bottom border */
+    background-color: transparent;
+    /* Keep background transparent */
+}
+
+/* Remove button outline on focus */
+.nav-tabs .nav-link-blue:focus {
+    box-shadow: none;
+}
+
+/* hero section */
+.whole-bg1 {
+    position: relative;
+}
+
+.whole-bg1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 58.7%;
+    /* This will cover half the container */
+    background-color: #00ADD40D;
+    /* Your color */
+    border-top-right-radius: 26px;
+    border-top-left-radius: 26px;
+    z-index: -1;
+    /* Ensure it stays behind the content */
+}
+
+.whole-bg2 {
+    background: linear-gradient(to right, #00ADD40D 58.7%, transparent 50%);
+    background-image: url('./'); /* Add your image path here */
+    background-repeat: no-repeat;
+    background-position: top left; /* Position the image in the top-left corner */
+    background-size: 200px;
+}
+
+.about-potolo-h {
+    color: #2B2B2B;
+    font-family: "Open Sans";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 68.09px;
+}
+
+.about-potolo-h1 {
+
+    font-weight: 600;
+    color: #00ADD4;
+
+}
+
+.about-potolo-detail {
+    color: #999A9D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.79px;
+}
+
+.lrn-btn1 {
+
+    padding: 11px 18px;
+    border-radius: 20px;
+    background: #00ADD4;
+    color: white;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+
+}
+
+/* vision */
+.vision-h {
+    font-family: "Inter";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36.31px;
+    color: #2B2B2B;
+}
+
+.vision-h1 {
+    font-family: "Inter";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36.31px;
+    color: #00ADD4;
+}
+
+.vision-p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+    color: #999A9D;
+}
+
+.lrn-btn {
+    background-color: transparent;
+    color: #00ADD4;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+    border: none;
+
+}
+
+.vision-image-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.image1-vision {
+    width: 100%;
+    max-width: 289.35px;
+    height: auto;
+}
+
+.image2-vision {
+    width: 100%;
+    max-width: 305.91px;
+    position: absolute;
+    top: 277px;
+    right: 254px;
+}
+
+.image3-vision {
+    width: 100%;
+    max-width: 242.82px;
+    position: absolute;
+    top: 216px;
+    left: 213px;
+    height: auto;
+    .image1-vision {
+        width: 100%;
+        max-width: 220.35px;
+        height: auto;
+    }
+
+    .image2-vision {
+        top: 211px;
+        left: 67px;
+        max-width: 238.91px;
+    }
+
+    .image3-vision {
+        max-width: 163.82px;
+        top: 166px;
+        left: 295px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .image2-vision {
+        top: 211px;
+        left: 3px;
+        max-width: 238.91px;
+    }
+
+    .image1-vision {
+        width: 100%;
+        max-width: 220.35px;
+        height: auto;
+    }
+   .bg-img{
+    height: 500px !important;
+    padding-inline: 20px;
+    margin-bottom: 20px;
+   }
+    .image3-vision {
+        max-width: 138.82px;
+        top: 196px;
+        left: 211px;
+    }
+}
+
+
+
+
+
+
+/* .vision-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-v {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.image1-vision {
+    top: 0;
+    left: 40px;
+}
+
+.image2-vision {
+    top: 300px;
+    left: 0px;
+}
+
+.image3-vision {
+    top: 233px;
+    left: 281px;
+} */
+
+
+
+
+/* our commitment */
+
+.comit-img {
+
+    width: 100%;
+    height: auto;
+    border-right: 3.81px solid #00ADD4;
+    border-radius: 7.62px;
+    box-shadow: 0px 5.51px 11.82px 0px #42A8C324;
+
+}
+
+/* meet our team */
+
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 48px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+
+}
+
+.carousel-card {
+    flex: 0 0 auto;
+}
+
+.meet-img1 {
+    width: 95px;
+    height: 95px;
+    border: 1.72px solid #00ADD4 !important;
+    border-radius: 50%;
+}
+
+.card-meet {
+    width: 325px;
+    background: #FFFFFF;
+    border-top: 1.6px solid #00ADD4;
+    border-radius: 10px;
+    gap: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    margin-top: 50px;
+}
+
+.card-meet-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+    color: #000000;
+}
+
+.card-meet-p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: center;
+    color: #00ADD4;
+}
+
+.card-meet-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.34px;
+    text-align: center;
+    color: #999A9D;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 173, 212, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+
+.carousel-button {
+    display: none;
+    /* Hide the buttons */
+}
+
+
+
+.meet-img1 {
+    width: 95px;
+    height: 95px;
+    border: 1.72px solid #00ADD4 !important;
+    border-radius: 50%;
+}
+
+.card-meet {
+    width: 325px;
+    background: #FFFFFF;
+    border-top: 1.6px solid #00ADD4;
+    border-radius: 10px;
+    gap: 12px;
+}
+
+.card-meet-title {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+    color: #000000;
+}
+
+.card-meet-p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: center;
+    color: #00ADD4;
+}
+
+.card-meet-text {
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.34px;
+    text-align: center;
+    color: #999A9D;
+}
+
+*/ .whole-bg {
+    background-image: url('./assets/business-section-images/whole-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+/* ################## my Work #################### */
+/* ############################ sect-2 #################### */
+
+.sect-2 {
+    position: relative;
+}
+
+.sect-2::before {
+    content: '';
+    position: absolute;
+    width: 7rem;
+    height: 16rem;
+    top: -20px;
+    background-color: #00ADD4;
+    opacity: 45%;
+}
+
+.sect-2-img img {
+    position: relative;
+}
+
+/* ############################ sect-3 #################### */
+.sect-3 {
+    position: relative;
+}
+
+.sect-3::before {
+    content: '';
+    position: absolute;
+    width: 7rem;
+    height: 16rem;
+    top: -20px;
+    right: -5px;
+    background-color: #00ADD4;
+    opacity: 45%;
+}
+
+.sect-3-img img {
+    position: relative;
+}
+
+
+.sect-4 {
+    position: relative;
+}
+
+.sect-4::before {
+    content: '';
+    position: absolute;
+    width: 7rem;
+    height: 16rem;
+    top: -20px;
+    left: -5px;
+    /* right:-5px; */
+    background-color: #00ADD4;
+    opacity: 45%;
+}
+
+.sect-4-img img {
+    position: relative;
+}
+
+
+/* ############### Cards ################ */
+
+.card {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px -3px #00ADD4;
+    padding: 8px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card-text {
+    color: #777;
+    font-size: 14px;
+}
+
+
+
+
+
+.custom-box {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 2% 95%);
+    /* Custom shape */
+}
+
+.custom-box video {
+
+    width: 100%;
+    /* Adjust video width to fill the triangular shape */
+    height: 100%;
+    object-fit: cover;
+    /* Ensure video covers the triangular area */
+
+}
+
+@media (max-width: 1227px) {
+    .image2-vision {
+        top: 250px;
+        left: -23px;
+        max-width: 246.91px;
+    }
+
+    .image3-vision {
+        width: 100%;
+        max-width: 202.82px;
+        position: absolute;
+        top: 216px;
+        left: 186px;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+    .vision-image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image3-vision {
+
+        max-width: 202.82px;
+        top: 216px;
+        left: 408px;
+    }
+
+    .image2-vision {
+        top: 276px;
+        left: 151px;
+        max-width: 296.91px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-potolo-h {
+        font-size: 30px;
+    }
+    .potolo-detail{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image2-vision {
+        top: 274px;
+        left: 63px;
+        max-width: 296.91px;
+    }
+
+    .image3-vision {
+        max-width: 202.82px;
+        top: 216px;
+        left: 319px;
+    }
+
+
+}
+
+@media (max-width: 589px) {
+
+    .image1-vision {
+        width: 100%;
+        max-width: 220.35px;
+        height: auto;
+    }
+
+    .image2-vision {
+        top: 211px;
+        left: 67px;
+        max-width: 238.91px;
+    }
+
+    .image3-vision {
+        max-width: 163.82px;
+        top: 166px;
+        left: 295px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .image2-vision {
+        top: 211px;
+        left: 3px;
+        max-width: 238.91px;
+    }
+
+    .lrn-btn1,
+    .lrn-btn {
+        font-size: 10px;
+    }
+
+
+
+    .image1-vision {
+        width: 100%;
+        max-width: 220.35px;
+        height: auto;
+    }
+
+    .image3-vision {
+        max-width: 138.82px;
+        top: 196px;
+        left: 211px;
+    }
+}
+

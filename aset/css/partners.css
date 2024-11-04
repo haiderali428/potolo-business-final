@@ -1,0 +1,90 @@
+.partners-hero-section {
+    height: 100vh;
+    color: rgb(105, 116, 139);
+}
+.partners-hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 800px;
+}
+.partners-hero-section p {
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+
+/* Logo Container Styling */
+.logo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.logo-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.logo-item:hover {
+    transform: scale(1.1);
+}
+
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-item:hover img {
+    transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+.partner-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover img {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+.partners-testimonial {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 992px){
+    .partners-hero-section {
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    .custom-col {
+        flex: 0 0 auto;
+        width: 16.66667%;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .custom-col {
+        flex: 0 0 auto;
+        width: 33.33333%;
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-col {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .partners-hero-section p {
+        padding-inline: 10px;
+    }
+}

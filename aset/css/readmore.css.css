@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.back-butn{
+    padding: 5px 10px ;
+    background-color: #04748d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+h1{
+    font-size: 40px;
+    color: #2b2b2b;
+    
+}
+h1 span{
+    font-weight: 350;
+}
+
+p{
+    color: #999A9D;
+}

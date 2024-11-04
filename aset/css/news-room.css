@@ -1,0 +1,433 @@
+/* BEGIN : Muhammad Munsif ID_366 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+.policy-section {
+  background-color: #f9f9f9;
+}
+
+/* .blue-circle {
+    background-color: #007bff;
+    border-radius: 50%;
+    color: white;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+  } */
+
+.policy-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.policy-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .blue-circle {
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+
+  .policy-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blue-circle {
+    padding: 1rem;
+  }
+
+  .policy-title {
+    font-size: 1.5rem;
+  }
+
+  .policy-text {
+    font-size: 0.9rem;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.featured-card {
+  /* background-color: #222; */
+  background-image: url(../../assets/news-room-images/imagefour.png) 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.featured-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.badge-info {
+  background-color: #00aaff;
+  font-size: 0.9rem;
+}
+
+.read-more-link {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+.media .article-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.media-body h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* 2nd section code desig */
+/* General Styles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.see-all-link {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.see-all-link:hover {
+  text-decoration: underline;
+}
+
+/* Banner Styles */
+.news-banner {
+  background-color: #007bff;
+  border-radius: 15px;
+  background-image: url('banner-pattern.png');
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.banner-title {
+  font-family: "Open Sans";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 53.15px;
+  color: #FFFFFF;
+
+}
+
+.banner-description {
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+/* Decorative Blue Dot */
+.blue-dot {
+  width: 40px;
+  height: 40px;
+  background-color: #00aaff;
+  border-radius: 50%;
+}
+
+/* News Cards */
+.news-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  /* background-color: #222; */
+}
+
+.news-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
+.read-more-link {
+  color: #00aaff;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+/* background-image */
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+.time-ago {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card {
+  border: none !important;
+}
+
+.event-card .date-badge {
+  width: 80px;
+  padding: 10px 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* .event-card img {
+  object-fit: cover;
+  height: 220px;
+  border-radius: 3px;
+} */
+.event-imgg {
+  object-fit: cover;
+  height: 210px;
+
+
+  max-width: 339px;
+  width: 100%;
+
+border-radius: 10px;
+
+}
+
+.event-imgg {
+  object-fit: cover;
+  height: 210px;
+
+
+  max-width: 100% !important;
+  width: 100%;
+
+border-radius: 10px;
+
+}
+
+
+/* .event-imgg {
+  object-fit: cover;
+  height: 199px;
+    max-width: 313px;
+width: 100%;
+border-radius: 10px;
+
+} */
+.card-body h5 {
+  font-weight: bold;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+/* General Styling for the Cards */
+.event-card {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Date Badge Styling */
+.date-badge-ok {
+
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00ADD4;
+  width: 48px;
+  height: 49px;
+  padding: 10px;
+}
+
+.date-badge-ok1 {
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.sustain-practice-h {
+  font-family: "Open Sans";
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 21.79px;
+  text-align: left;
+
+}
+
+.card-subtitle-evnt {
+  color:  #999A9D;
+  font-family: "Open Sans";
+font-size: 10px;
+font-weight: 400;
+line-height: 23.46px;
+text-align: left;
+}
+
+.card-text-event {
+  font-family: "Open Sans";
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color:  #999A9D;
+
+}
+/* form designed code */
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #00a3e0;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .date-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .event-card img {
+    height: 200px;
+  }
+
+  .date-badge {
+    width: 70px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+  }
+
+  .news-card img {
+    height: 150px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .featured-card img {
+    height: 200px;
+  }
+
+  .media .article-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bg-img {
+    height: 500px !important;
+    padding-inline: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* END : Muhammad Munsif ID_366 */
+.contact-section {
+  /* padding: 24px 0px 20px 0px; */
+}
+
+.contact-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* form {
+    margin-top: 20px;
+  } */
+
+.btn-primary {
+  background-color: #00bcd4;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00a2b3;
+}
