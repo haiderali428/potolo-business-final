@@ -165,14 +165,10 @@
 
 .lrn-btn1:hover {
 
-    padding: 11px 18px;
-    border-radius: 20px;
-    background: #00ADD4;
-    color: white;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.51px;
+   
+    border: 2px solid #00ADD4;
+    color: #00ADD4;
+    
 
 }
 
@@ -1188,3 +1184,8 @@ color:  #999A9D;
 }
 
 /* video */
+
+
+
+/* haider changing about us */
+

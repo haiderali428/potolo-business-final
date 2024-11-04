@@ -131,6 +131,7 @@
 }
 
 .lrn-btn {
+    padding: 11px 18px !important;
     background-color: transparent;
     color: #00ADD4;
     font-family: "Open Sans";

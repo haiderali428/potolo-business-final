@@ -81,7 +81,21 @@
     font-weight: 400;
     line-height: 21.79px;
     color: #00ADD4;
-}
+    border: 1px solid #00ADD4;
+    border-radius: 22px;
+    line-height: 21.79px;
+    padding-top: 1px;
+    padding-bottom: 2.5px;
+    padding-inline: 14px;
+} 
+
+.nav-login:hover {
+    border-radius: 22px;
+    background: #00ADD4;
+    color: white;
+  
+} 
+
 
 .nav-sign-up-btn {
     border-radius: 22px;
@@ -96,7 +110,11 @@
     font-family: "Open Sans";
     padding-inline: 12px;
 }
-
+.nav-sign-up-btn:hover {
+    color: #00ADD4;
+    border: 1px solid #00ADD4;
+    background: none;
+}
 /* navbar end */
 
 /* .nav-tabs .nav-link-blue {
@@ -205,3 +223,6 @@ line-height: 21.79px;
 }
 
 /* footer end */
+
+/* haider fixing */
+
