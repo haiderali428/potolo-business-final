@@ -23,6 +23,26 @@
     <link rel="stylesheet" href="./aset/css/indec.css">
     <link rel="stylesheet" href="./aset/css/news-room.css">
 
+     <!-- Custom CSS -->
+     <style>
+        /* Custom style for the toggler button */
+        .navbar-toggler.custom-toggler {
+            border-color: #00ADD4; /* Border color for the toggler button */
+            outline: none; /* Removes default outline */
+        }
+
+        .navbar-toggler.custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300ADD4' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            /* #00ADD4 color for the toggler icon lines */
+        }
+
+        /* Focus style with custom outline */
+        .navbar-toggler.custom-toggler:focus {
+            outline: 2px solid #00ADD4; /* Custom outline color on focus */
+            outline-offset: 2px; /* Adds spacing between border and outline */
+        }
+    </style>
+
 
     <style>
         a {
@@ -46,7 +66,9 @@
             box-shadow: 0px 5.51px 11.82px 0px #42A8C324;
 
         }
-
+        .vision-weight{
+       font-weight: 600;
+        }
         .fifty-percent-h {
             font-family: "Open Sans";
             font-size: 30px;
@@ -62,7 +84,17 @@
             font-weight: 400;
             line-height: 16.34px;
         }
+        .dropdown-menu .dropdown-item:hover, 
+.dropdown-menu .dropdown-item:focus {
+    background-color:  #00ADD4 !important;
+    color: white; /* Retains the original text color */
+}
 
+/* Remove any focus border or shadow */
+.dropdown-menu .dropdown-item:active {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
         .commitment-bg-container {
             background-image: url('./assets/business-section-images/commitment-bg.png');
             background-size: cover;
@@ -144,15 +176,31 @@
 
         .whole-bg4 {
             background: linear-gradient(to right, #00ADD40D 58.7%, transparent 50%) !important;
-            border-bottom-left-radius: 50px;
+            border-bottom-left-radius: 50px ;
+             border-bottom-right-radius: 50px !important;
+            position: relative; /* Make sure the parent is positioned */
             /* Adjust the radius as needed */
-            border-bottom-right-radius: 50px;
+           
             overflow: hidden;
+        }
+        .whole-bg4::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 50%; /* Adjust based on your design */
+            height: 50%; /* Adjust based on your design */
+            background-image: url('/assets/business-section-images/circle.png'); /* Update with the correct path */
+            background-repeat: no-repeat;
+            background-size: contain; /* Adjust size based on the appearance you want */
+            background-position: top left; /* Adjust position as needed */
+            opacity: 1; /* Adjust opacity if you want a more subtle effect */
+            z-index: -1; /* Ensure it appears behind the content */
         }
 
 
         .comit-top {
-            margin-top: 69px !important;
+            margin-top: 30px !important;
         }
 
         @media (max-width: 992px) {
@@ -272,12 +320,17 @@
 
 
                 <!-- Navbar toggler for smaller screens -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- Navbar Toggler Button -->
+                 <!-- Navbar Toggler Button -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Center the navbar items -->
+           
+
+
+                     <!-- Center the navbar items -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
                     <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; gap: 23px;">
                         <li class="nav-item dropdown">
@@ -306,7 +359,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle list-colorr d-flex align-items-center" href="#"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                business
+                                Business
                                 <div class="ms-1">
                                     <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.78435 6C5.59571 6 5.40709 5.92797 5.26327 5.78422L0.737412 1.25832C0.449509 0.970413 0.449509 0.503627 0.737412 0.21584C1.0252 -0.0719468 1.49189 -0.0719468 1.77982 0.21584L5.78435 4.22061L9.78891 0.21598C10.0768 -0.0718069 10.5435 -0.0718069 10.8312 0.21598C11.1193 0.503767 11.1193 0.970553 10.8312 1.25846L6.30544 5.78436C6.16155 5.92814 5.97293 6 5.78435 6Z" fill="#00ADD4"/>
@@ -354,7 +407,7 @@
 
                                 <a class="navbar-brand" href="#">
                                     <div class="d-flex align-items-center gap-3">
-                                        <p class="nav-login mb-0">Log in</p>
+                                      <a href="" class="nav-login mb-0">Log in </a>
                                         <button class="nav-sign-up-btn px-3" type="submit">Sign up</button>
                                     </div>
                                 </a>
@@ -374,9 +427,9 @@
                 </form>
             </div>
         </nav>
-    </div>
+    </div> 
     <!-- ********* Header-section end *********** -->
-    <!-- ********* Body start *********** -->
+    <!-- ********* Bodystart *********** -->
     <!-- ********* Menus start *********** -->
     <div class="">
         <div class="">
@@ -391,7 +444,7 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link-blue active" id="tab1-tab" data-bs-toggle="tab"
                                         data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1"
-                                        aria-selected="true">About US</button>
+                                        aria-selected="true">About Us</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link-blue" id="tab2-tab" data-bs-toggle="tab"
@@ -470,7 +523,7 @@
                     </div>
                     <!-- *********  Hero section *********** -->
                     <!-- ********* Our Vision start *********** -->
-                    <div class="vis-bg">
+                    <div class="vis-bg mt-md-3 mt-1">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 mt-5">
@@ -522,9 +575,9 @@
                     <div class="comit-top comit-top4">
                         <div class="container">
                             <div class="row pt-lg-5 mb-5">
-                                <div class="col-lg-5 mt-lg-5">
-                                    <div class="py-lg-3 my-lg-5">
-                                        <p class="vision-h">Our <span class="vision-h1">Commitment</span></p>
+                                <div class="col-lg-5 mt-lg-5 ">
+                                    <div class="py-lg-3 my-lg-5 ps-lg-2">
+                                        <p class="vision-h mt-lg-5">Our <span class="vision-h1">Commitment</span></p>
                                         <p class="vision-p" style="font-size: 13.7px;width: 90%;">
                                             Our mission is to provide users with ease of accessibility and quick
                                             fulfilment for most consumer needs, making life simple while helping
@@ -565,13 +618,13 @@
                     <!-- ********* Meet Our Team start *********** -->
                     <div class="crd-bg-lines"
                         style=" background-image: url('./assets/business-section-images/Group\ 18200\ \(6\).png'); background-position: 0px 287px; background-repeat: no-repeat; background-size: 221px 332px;padding-bottom: 57px;">
-                        <div class="meet-team-bg pt-5 pb-5">
+                        <div class="meet-team-bg pt-3 pb-3">
                             <div class="d-flex flex-column justify-content-center">
                                 <div>
                                     <p class="vision-h text-center">Meet Our <span class="vision-h1">Team</span></p>
                                 </div>
-                                <div class="px-lg-5 mx-lg-5">
-                                    <p class="vision-p text-center px-lg-5 mx-lg-5 mb-5" style="font-size: 16px;">
+                                <div class="px-lg-5 mx-lg-5 ">
+                                    <p class="vision-p text-center px-lg-5 mx-lg-5 mb-5 " style="font-size: 16px;">
                                         Our dedicated team at Potolo is passionate about empowering local businesses and
                                         fostering community connections. We work together to make local services easily
                                         accessible, delivering growth, convenience, and quality for all.
@@ -605,18 +658,21 @@
                                                         </p>
                                                         <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
                                                             <a href="#" class="" style="text-decoration: none;">
-                                                                <img src="./assets/business-section-images/social-icons (3).png"
-                                                                    style="width: 19px; height: 16px;"
+                                                                <!-- <img src="./assets/business-section-images/social-icons (3).png"
+                                                                    style="width: 20px; height: 16px; "
+                                                                    alt="Social Icon 1"> -->
+                                                                    <img src="./assets/business-section-images/twiter-latest.png"
+                                                                    style="width: 25px; height: 25px; border-radius: 3px !important;"
                                                                     alt="Social Icon 1">
                                                             </a>
-                                                            <a href="#" class="" style="text-decoration: none;">
+                                                            <a href="#" class="social-border-radius" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (1).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 2">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (2).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 3">
                                                             </a>
                                                         </div>
@@ -642,18 +698,21 @@
                                                         </p>
                                                         <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
                                                             <a href="#" class="" style="text-decoration: none;">
-                                                                <img src="./assets/business-section-images/social-icons (3).png"
-                                                                    style="width: 19px; height: 16px;"
+                                                                <!-- <img src="./assets/business-section-images/social-icons (3).png"
+                                                                    style="width: 19px; height: 16px; "
+                                                                    alt="Social Icon 1"> -->
+                                                                    <img src="./assets/business-section-images/twiter-latest.png"
+                                                                    style="width: 25px; height: 25px; border-radius: 3px !important;"
                                                                     alt="Social Icon 1">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (1).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 2">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (2).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 3">
                                                             </a>
                                                         </div>
@@ -679,18 +738,18 @@
                                                         </p>
                                                         <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
                                                             <a href="#" class="" style="text-decoration: none;">
-                                                                <img src="./assets/business-section-images/social-icons (3).png"
-                                                                    style="width: 19px; height: 16px;"
-                                                                    alt="Social Icon 1">
+                                                                <img src="./assets/business-section-images/twiter-latest.png"
+                                                                style="width: 25px; height: 25px; border-radius: 3px !important;"
+                                                                alt="Social Icon 1">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (1).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"  
                                                                     alt="Social Icon 2">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (2).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 3">
                                                             </a>
                                                         </div>
@@ -716,18 +775,18 @@
                                                         </p>
                                                         <div class="d-flex justify-content-center gap-3 mt-3 pb-4">
                                                             <a href="#" class="" style="text-decoration: none;">
-                                                                <img src="./assets/business-section-images/social-icons (3).png"
-                                                                    style="width: 19px; height: 16px;"
+                                                                <img src="./assets/business-section-images/twiter-latest.png"
+                                                                    style="width: 25px; height: 25px; border-radius: 3px !important;"
                                                                     alt="Social Icon 1">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (1).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 2">
                                                             </a>
                                                             <a href="#" class="" style="text-decoration: none;">
                                                                 <img src="./assets/business-section-images/social-icons (2).png"
-                                                                    style="width: 17px; height: 17px;"
+                                                                    style="width: 17px; height: 17px; border-radius: 3px !important;"
                                                                     alt="Social Icon 3">
                                                             </a>
                                                         </div>
@@ -754,7 +813,7 @@
                     <!-- Content 02 -->
 
                     <!-- *********  Hero section2 *********** -->
-                    <div class="whole-bg2">
+                    <div class="whole-bg2 whole-bg4">
                         <div class="container">
                             <div class="row pt-5">
                                 <!-- <div class="col-lg-5 d-flex flex-column justify-content-center"> -->
@@ -822,7 +881,7 @@
                                 <div class="col-12 d-md-flex align-items-md-center">
                                     <div class="col mt-5 sect-4 ">
 
-                                        <div class="container sect-4-img">
+                                        <div class="container  sect-4-img">
 
                                             <img src="./assets/business-section-images/3rd-main-image.png" alt=""
                                                 class="img-fluid">
@@ -1072,7 +1131,7 @@
                             <div class="row pt-lg-5 mb-5">
                                 <div class="col-lg-6 mt-lg-5">
                                     <div class="py-lg-3 my-lg-5">
-                                        <p class="vision-h">Our Apps and Products</p>
+                                        <p class="vision-h vision-weight">Our Apps and Products</p>
                                         <p class="vision-p" style="font-size: 13.7px;width: 90%;">
                                             The POTOLO application facilitates the ordering of products and services
                                             from a diverse network of partners, offering Users a wide array of choices.
@@ -1130,7 +1189,7 @@
                             </div>
                             <div class="col-lg-5 mt-lg-5">
                                 <div class="py-lg-3 my-lg-0 ps-lg-5">
-                                    <p class="vision-h">Our Partners</p>
+                                    <p class="vision-h vision-weight">Our Partners</p>
                                     <p class="mb-0 ceo-p" style="width: 100%;">
                                         We believe that collaboration is the key to success.
                                         Our partners are different local businesses, service providers and
@@ -1159,7 +1218,7 @@
                             <div class="row pt-lg-5 mb-5">
                                 <div class="col-lg-6 mt-lg-5">
                                     <div class="py-lg-3 my-lg-5">
-                                        <p class="vision-h">Low barrier to entry</p>
+                                        <p class="vision-h vision-weight">Low barrier to entry</p>
                                         <p class="vision-p" style="font-size: 13.7px;width: 90%;">
                                             Becoming a part of POTOLO is simple and inclusive, which makes it easier for
                                             small local businesses to be able to join our platform. We are big on ease
@@ -1342,7 +1401,7 @@
                                             <p class="break-news-text">
                                                 Breaking News: Stay Updated on PotoloLite's Latest Developments
                                             </p>
-                                            <a href="" style="text-decoration: none;">Read more</a>
+                                            <a href="" class="read-more-link">Read more</a>
                                             <p class="mb-0 hours-ago">5 hours ago</p>
                                         </div>
                                     </div>
@@ -1358,7 +1417,7 @@
                                             <p class="break-news-text">
                                                 Breaking News: Stay Updated on PotoloLite's Latest Developments
                                             </p>
-                                            <a href="" style="text-decoration: none;">Read more</a>
+                                            <a href="" class="read-more-link" >Read more</a>
                                             <p class="mb-0 hours-ago">5 hours ago</p>
                                         </div>
                                     </div>
@@ -1534,7 +1593,8 @@
                                                 local businesses. Learn how PotoloLite supports eco-friendly
                                                 initiatives.
                                             </p>
-                                            <a href="#" class="event-register" style="color: #00ADD4; font-family: Open Sans;
+                                            <a href="#" class="event-register read-more-link" style="color: #00ADD4; font-family: Open Sans;
+                                            
                                             font-size: 14.5px;
                                             font-weight: 400;
                                             line-height: 18px;
@@ -1575,11 +1635,12 @@
                                                 local businesses. Learn how PotoloLite supports eco-friendly
                                                 initiatives.
                                             </p>
-                                            <a href="#" class="event-register" style="color: #00ADD4; font-family: Open Sans;
+                                            <a href="#" class="event-register read-more-link" style="color: #00ADD4; font-family: Open Sans;
                                             font-size: 14.5px;
                                             font-weight: 400;
                                             line-height: 18px;
-                                            text-align: left; ">
+                                            text-align: left; 
+                                            ">
                                                 Register
                                                 Here
                                             </a>
@@ -1616,7 +1677,7 @@
                                                 local businesses. Learn how PotoloLite supports eco-friendly
                                                 initiatives.
                                             </p>
-                                            <a href="#" class="event-register" style="color: #00ADD4; font-family: Open Sans;
+                                            <a href="#" class="event-register read-more-link" style="color: #00ADD4; font-family: Open Sans;
                                             font-size: 14.5px;
                                             font-weight: 400;
                                             line-height: 18px;
@@ -1672,7 +1733,7 @@
 
                     <!-- <div class=" px-sm-5 "> -->
                     <div>
-                        <div class="whole-bg2">
+                        <div class="whole-bg2 whole-bg4">
                             <div class="container">
                                 <div class="row d-flex justify-content-center align-items-center">
 
@@ -1901,7 +1962,7 @@
 
                 <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
                     <!-- content 05 -->
-                    <div class="whole-bg2">
+                    <div class="whole-bg2 whole-bg4">
                         <div class="container">
                             <div class="row pt-5">
 
